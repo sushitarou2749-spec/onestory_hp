@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ｜株式会社ワン・ストーリー</title>
+<meta name="description" content="まずは、今感じている「困った」を聞かせてください。何をお願いすればいいのか分からない段階でも大丈夫です。">
+<meta property="og:title" content="お問い合わせ｜株式会社ワン・ストーリー">
+<meta property="og:description" content="まずは、今感じている「困った」を聞かせてください。何をお願いすればいいのか分からない段階でも大丈夫です。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-top">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.png" alt="One Story">
+      <span class="name">株式会社ワン・ストーリー</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="gnav" id="gnav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">私たちについて</a></li>
+      <li><a href="business.html">企業・組織を整える</a></li>
+      <li><a href="program.html">プログラム</a></li>
+      <li><a href="human.html">人を整える</a></li>
+      <li><a href="wisdom.html">日本の智慧</a></li>
+      <li><a href="future.html">次世代へ</a></li>
+      <li><a href="column.html">コラム</a></li>
+      <li><a href="contact.html" class="current">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="page-head">
+  <img class="botanical" src="assets/botanical.svg" alt="">
+  <div class="wrap">
+    <div class="inner">
+      <span class="script">Contact</span>
+      <h1>お問い合わせ</h1>
+      <p class="tagline">まずは、今感じている「困った」を聞かせてください。</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap-mid center">
+    <p class="lead-copy narrow">「何をお願いすればいいのか分からない」<br>
+    「システムが必要なのかも分からない」<br>
+    そんな状態でも大丈夫です。お話を伺いながら、一緒に整理していきます。</p>
+    <hr class="rule">
+    <p class="lead-copy narrow quiet">ご相談内容の目安</p>
+    <ul class="plain-list" style="max-width:32em;margin-inline:auto;">
+      <li>会社について相談する</li>
+      <li>講座・合宿について相談する</li>
+      <li>個人セッションについて相談する</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bg-gray">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>お問合せフォーム</h2>
+      <p class="ja-sub">ご相談、各種お申込み、講演・セミナー等のご依頼などお気軽にお問合せください。</p>
+    </div>
+    <div class="contact-cols">
+      <!-- ===== フォーム ===== -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="f-name">お名前<span class="req">*</span></label>
+          <input type="text" id="f-name" name="お名前" placeholder="お名前" required>
+          <span class="err">お名前をご入力ください</span>
+        </div>
+        <div class="field">
+          <label for="f-company">会社名・団体名</label>
+          <input type="text" id="f-company" name="会社名" placeholder="会社名・団体名（任意）">
+        </div>
+        <div class="field">
+          <label for="f-email">Email<span class="req">*</span></label>
+          <input type="email" id="f-email" name="メールアドレス" placeholder="Email" required>
+          <span class="err">メールアドレスをご確認ください</span>
+        </div>
+        <div class="field">
+          <label for="f-tel">お電話番号(任意)</label>
+          <input type="tel" id="f-tel" name="電話番号" placeholder="お電話番号(任意)">
+        </div>
+        <div class="field">
+          <label for="f-type">お問合せ内容<span class="req">*</span></label>
+          <select id="f-type" name="お問合せ内容" required>
+            <option value="">お問合せ内容</option>
+            <option>会社について相談する</option>
+            <option>講座・合宿について相談する</option>
+            <option>個人セッションについて相談する</option>
+            <option>取材・講演のご依頼</option>
+            <option>その他</option>
+          </select>
+          <span class="err">お問合せ内容をお選びください</span>
+        </div>
+        <div class="field">
+          <label for="f-msg">メッセージ<span class="req">*</span></label>
+          <textarea id="f-msg" name="メッセージ" placeholder="メッセージ" required></textarea>
+          <span class="err">メッセージをご入力ください</span>
+        </div>
+
+        <!-- 迷惑メール対策（人には見えません。触らないでください） -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="f-hp">この欄は入力しないでください</label>
+          <input type="text" id="f-hp" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" class="form-submit" id="formSubmit">送信する</button>
+        <p class="form-msg" id="formMsg"></p>
+        <p class="form-privacy">いただいた個人情報は、お問い合わせへのご返信以外の目的では使用いたしません。</p>
+      </form>
+
+      <!-- ===== 右側（写真・リンク） ===== -->
+      <div class="contact-side">
+        <img src="images/rika.jpg" alt="代表 平澤利佳">
+        <p class="side-links"><a href="#" target="_blank" rel="noopener">Facebook</a></p>
+        <p class="side-note">お返事には数日いただく場合がございます。<br>
+        3日以上返信がない場合は、恐れ入りますが再度ご連絡ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap-mid center">
+    <span class="script">Company</span>
+    <hr class="rule">
+    <table class="spec">
+      <tr><th>会社名</th><td>株式会社ワン・ストーリー</td></tr>
+      <tr><th>代表取締役</th><td>平澤 利佳</td></tr>
+      <tr><th>所在地</th><td>〒472-0001　愛知県知立市八橋町山田谷2-15</td></tr>
+      <tr><th>メール</th><td>onestory310@gmail.com</td></tr>
+      <tr><th>事業内容</th><td>業務改善コンサルティング／システム開発／IT・AI活用支援／組織づくり支援／各種講座・セッション</td></tr>
+    </table>
+  </div>
+</section>
+
+<script src="assets/contact.js"></script>
+<footer class="site-footer">
+  <div class="wrap">
+    <ul class="footer-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">私たちについて</a></li>
+      <li><a href="business.html">企業・組織を整える</a></li>
+      <li><a href="program.html">プログラム</a></li>
+      <li><a href="human.html">人を整える</a></li>
+      <li><a href="wisdom.html">日本の智慧</a></li>
+      <li><a href="future.html">次世代へ</a></li>
+      <li><a href="column.html">コラム</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="docs/onestory-service.pdf" target="_blank" rel="noopener">サービス資料（PDF）</a></li>
+    </ul>
+    <p class="copyright">&copy; 2026 株式会社ワン・ストーリー &nbsp;/&nbsp; <a href="tokushoho.html">特定商取引法に基づく表記</a></p>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
