@@ -1,97 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>お知らせ・コラム｜株式会社ワン・ストーリー</title>
-<meta name="description" content="会社を整える／人を整える／日本の智慧／未来を考える。人・会社・未来を整えるためのコラムをお届けします。">
-<meta property="og:title" content="お知らせ・コラム｜株式会社ワン・ストーリー">
-<meta property="og:description" content="会社を整える／人を整える／日本の智慧／未来を考える。人・会社・未来を整えるためのコラムをお届けします。">
-<meta property="og:type" content="website">
-<link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<title>コラム｜ホームページ制作・SEO・集客のヒント｜ワン・ストーリー</title>
+<meta name="description" content="はじめての方にも分かる言葉で、ホームページ制作・SEO・集客のヒントをお届けします。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&amp;family=Pinyon+Script&amp;family=Cormorant+Garamond:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff;color:#1a1a1a;font-family:"Noto Serif JP","Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-size:14.5px;line-height:2;letter-spacing:.05em}
+a{color:#C25500}a:hover{color:#C25500}
+.en{font-family:"Cormorant Garamond","Noto Serif JP",serif}
+.arrow{transition:transform .25s ease-out}
+.os-btn{transition:background-color .25s ease-out,color .25s ease-out}
+.os-btn--primary:hover{background:#9E4500 !important}
+.os-btn--white:hover{background:#ffffff !important}
+.os-btn:hover .arrow{transform:translateX(4px)}
+.nav-link{color:#1a1a1a;text-decoration:none;background-image:linear-gradient(#ef7a00,#ef7a00);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .3s ease-out}
+.nav-link:hover,.nav-link[aria-current="page"]{color:#1a1a1a;background-size:100% 1px}
+.ft-link:hover{color:#C25500 !important}
+.card-link{transition:border-color .25s ease-out}.card-link:hover{border-color:#1a1a1a !important}
+.card-link:hover .ttl{text-decoration:underline;text-decoration-color:#ef7a00;text-underline-offset:4px}
+.tabbtn{transition:border-color .2s ease-out}.tabbtn:hover{border-bottom-color:#1a1a1a !important}
+.pg:hover{border-color:#1a1a1a !important}
+a:focus-visible,button:focus-visible{outline:2px solid #1a1a1a;outline-offset:2px}
+.on-dark a:focus-visible{outline-color:#f8bc63}
+.menu-btn{display:none !important}
+@media (max-width:960px){.nav-pc{display:none !important}.menu-btn{display:inline-flex !important}}
+@media (min-width:769px){.sp-cta{display:none !important}}
+@media (max-width:768px){.sec{padding-top:56px !important;padding-bottom:56px !important}.wrap{padding-left:16px !important;padding-right:16px !important}.ph-h1{font-size:24px !important}}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/site.css">
+<!-- Googleアナリティクス（GA4）：測定IDを取得したら、ここに計測タグを貼る -->
 </head>
 <body>
-<header class="site-header">
-  <div class="header-top">
-    <a class="logo" href="index.html">
-      <img src="assets/logo.png" alt="One Story">
-      <span class="name">株式会社ワン・ストーリー</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="gnav" id="gnav">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">私たちについて</a></li>
-      <li><a href="business.html">企業・組織を整える</a></li>
-      <li><a href="program.html">プログラム</a></li>
-      <li><a href="human.html">人を整える</a></li>
-      <li><a href="wisdom.html">日本の智慧</a></li>
-      <li><a href="future.html">次世代へ</a></li>
-      <li><a href="column.html" class="current">コラム</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-    </ul>
-  </nav>
+<div style="background: #ffffff">
+<header style="position: sticky; top: 0; z-index: 20; background: #ffffff; border-bottom: 1px solid #F8D9B8; font-family: 'Noto Serif JP', 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif; color: #1a1a1a">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="index.html" style="display: flex; align-items: center; text-decoration: none">
+<img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー トップへ" style="height: 36px; width: auto; display: block">
+</a>
+<nav class="nav-pc" aria-label="グローバルナビゲーション" style="display: flex; align-items: center; gap: 32px; font-size: 13px; font-weight: 500">
+<a class="nav-link" href="service.html" aria-current="false" style="padding: 6px 0">サービス</a>
+<a class="nav-link" href="price.html" aria-current="false" style="padding: 6px 0">料金</a>
+<a class="nav-link" href="works.html" aria-current="false" style="padding: 6px 0">制作実績</a>
+<a class="nav-link" href="about.html" aria-current="false" style="padding: 6px 0">私たちについて</a>
+<a class="nav-link" href="column.html" aria-current="page" style="padding: 6px 0">コラム</a>
+<a class="os-btn os-btn--primary" href="contact.html" style="display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 22px; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 13px">無料相談<svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</nav>
+<button class="menu-btn" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false" data-menu-open style="width: 44px; height: 44px; border: 1px solid #1a1a1a; background: #ffffff; align-items: center; justify-content: center; color: #1a1a1a; cursor: pointer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+</button>
+</div>
 </header>
-<div class="page-head">
-  <img class="botanical" src="assets/botanical.svg" alt="">
-  <div class="wrap">
-    <div class="inner">
-      <span class="script">Column</span>
-      <h1>お知らせ・コラム</h1>
-      <p class="tagline">人・会社・未来を整える。</p>
-    </div>
-  </div>
+<div id="sp-menu" class="sp-menu" hidden>
+<div class="sp-menu__bar"><img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー" style="height: 32px; width: auto"><button type="button" class="sp-menu__close" data-menu-close aria-label="メニューを閉じる"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+<nav aria-label="メニュー" class="sp-menu__nav">
+<a href="index.html"><span class="en">TOP</span>トップ</a>
+<a href="service.html"><span class="en">SERVICES</span>サービス</a>
+<a href="price.html"><span class="en">PRICE</span>料金プラン</a>
+<a href="works.html"><span class="en">WORKS</span>制作実績</a>
+<a href="about.html"><span class="en">ABOUT</span>私たちについて</a>
+<a href="column.html"><span class="en">COLUMN</span>コラム</a>
+</nav>
+<a class="sp-menu__cta" href="contact.html">無料で相談する<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 </div>
 
-<section>
-  <div class="wrap-mid">
-    <div class="cat-chips">
-      <span>会社を整える　業務改善／IT／AI／組織／経営</span>
-      <span>人を整える　心／身体／自律神経／経営者のコンディショニング</span>
-      <span>日本の智慧　文化／祈り／ご先祖／自然</span>
-      <span>未来を考える　AI時代／子ども／教育／働き方</span>
-    </div>
-    <ul class="post-list">
-      <li><a href="#"><p class="meta">2026.00.00<span class="cat">会社を整える</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-      <li><a href="#"><p class="meta">2026.00.00<span class="cat">人を整える</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-      <li><a href="#"><p class="meta">2026.00.00<span class="cat">日本の智慧</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-      <li><a href="#"><p class="meta">2026.00.00<span class="cat">未来を考える</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-      <li><a href="#"><p class="meta">2026.00.00<span class="cat">会社を整える</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-    </ul>
-  </div>
+<section class="ph" style="background: #EF7A00; border-bottom: 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 0">
+<nav aria-label="パンくずリスト"><ol style="list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; font-size: 11px; color: #303330"><li><a href="index.html" style="color: #303330">トップ</a></li><li aria-hidden="true">/</li><li aria-current="page">コラム</li></ol></nav>
+<p class="script" aria-hidden="true" style="margin: 40px 0 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #ffffff">Column</p>
+<h1 class="ph-h1" style="margin: 12px 0 0; font-size: 32px; line-height: 1.5; font-weight: 600; letter-spacing: 0.1em">コラム</h1>
+<p style="margin: 16px 0 0; max-width: 40em; color: #303330">ホームページづくりや集客について、はじめての方にも分かる言葉でお届けします。</p>
+<div role="group" aria-label="カテゴリで絞り込む" style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 0 4px">
+
+<button class="tabbtn" type="button" data-filter="all" aria-pressed="true" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; border-bottom: 2px solid transparent; font: inherit; font-size: 14px; color: #1a1a1a; cursor: pointer">すべて</button>
+
+
+<button class="tabbtn" type="button" data-filter="web" aria-pressed="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; border-bottom: 2px solid transparent; font: inherit; font-size: 14px; color: #1a1a1a; cursor: pointer">ホームページ制作</button>
+
+
+<button class="tabbtn" type="button" data-filter="seo" aria-pressed="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; border-bottom: 2px solid transparent; font: inherit; font-size: 14px; color: #1a1a1a; cursor: pointer">SEO</button>
+
+
+<button class="tabbtn" type="button" data-filter="mkt" aria-pressed="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; border-bottom: 2px solid transparent; font: inherit; font-size: 14px; color: #1a1a1a; cursor: pointer">集客</button>
+
+
+<button class="tabbtn" type="button" data-filter="case" aria-pressed="false" style="min-height: 48px; padding: 0 20px; background: transparent; border: 0; border-bottom: 2px solid transparent; font: inherit; font-size: 14px; color: #1a1a1a; cursor: pointer">事例</button>
+
+</div>
+</div>
 </section>
-<section class="cta-band">
-  <div class="wrap-narrow">
-    <h2>まずは、今感じている「困った」を聞かせてください。</h2>
-    <p>「何をお願いすればいいのか分からない」「システムが必要なのかも分からない」<br>
-    そんな状態でも大丈夫です。お話を伺いながら、一緒に整理していきます。</p>
-    <p style="margin-top:28px;"><a class="btn" href="contact.html">会社の課題を相談する</a></p>
-  </div>
+
+<section class="sec" style="padding: 72px 0 96px">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px 24px">
+
+<a class="card-link" data-tag="web" href="column-article.html" style="display: flex; flex-direction: column; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div role="img" aria-label="記事のアイキャッチ画像" style="aspect-ratio: 16 / 9; background: #FFE4C7; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #303330">アイキャッチ画像</div>
+<div style="padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; gap: 12px"><time class="en" datetime="2026-11-01" style="font-size: 11px; color: #737573; letter-spacing: 0.1em">2026.11.01</time><span style="font-size: 11px; background: #FFE0BD; padding: 2px 10px">ホームページ制作</span></div>
+<h2 class="ttl" style="margin: 0; font-size: 16px; line-height: 1.6; font-weight: 600">【ダミー】ホームページ制作を頼む前に、準備しておきたい5つのこと</h2>
+</div>
+</a>
+
+
+<a class="card-link" data-tag="seo" href="column-article.html" style="display: flex; flex-direction: column; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div role="img" aria-label="記事のアイキャッチ画像" style="aspect-ratio: 16 / 9; background: #FFE4C7; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #303330">アイキャッチ画像</div>
+<div style="padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; gap: 12px"><time class="en" datetime="2026-10-20" style="font-size: 11px; color: #737573; letter-spacing: 0.1em">2026.10.20</time><span style="font-size: 11px; background: #FFE0BD; padding: 2px 10px">SEO</span></div>
+<h2 class="ttl" style="margin: 0; font-size: 16px; line-height: 1.6; font-weight: 600">【ダミー】自分のお店の名前で検索しても出てこないときに確認したいこと</h2>
+</div>
+</a>
+
+
+<a class="card-link" data-tag="mkt" href="column-article.html" style="display: flex; flex-direction: column; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div role="img" aria-label="記事のアイキャッチ画像" style="aspect-ratio: 16 / 9; background: #FFE4C7; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #303330">アイキャッチ画像</div>
+<div style="padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; gap: 12px"><time class="en" datetime="2026-10-05" style="font-size: 11px; color: #737573; letter-spacing: 0.1em">2026.10.05</time><span style="font-size: 11px; background: #FFE0BD; padding: 2px 10px">集客</span></div>
+<h2 class="ttl" style="margin: 0; font-size: 16px; line-height: 1.6; font-weight: 600">【ダミー】ホームページとLPのちがい。どちらをつくるべきか</h2>
+</div>
+</a>
+
+</div>
+</div>
 </section>
-<footer class="site-footer">
-  <div class="wrap">
-    <ul class="footer-nav">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">私たちについて</a></li>
-      <li><a href="business.html">企業・組織を整える</a></li>
-      <li><a href="program.html">プログラム</a></li>
-      <li><a href="human.html">人を整える</a></li>
-      <li><a href="wisdom.html">日本の智慧</a></li>
-      <li><a href="future.html">次世代へ</a></li>
-      <li><a href="column.html">コラム</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-      <li><a href="docs/onestory-service.pdf" target="_blank" rel="noopener">サービス資料（PDF）</a></li>
-    </ul>
-    <p class="copyright">&copy; 2026 株式会社ワン・ストーリー &nbsp;/&nbsp; <a href="tokushoho.html">特定商取引法に基づく表記</a></p>
-  </div>
+
+<div style="font-family: 'Noto Serif JP', 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif; color: #1a1a1a; font-size: 14.5px; line-height: 2; letter-spacing: 0.05em">
+
+<!-- CTA帯 -->
+<section style="background: #EF7A00; color: #1a1a1a; padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
+<div style="flex: 1 1 480px; min-width: 0">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #ffffff">Contact</p>
+<h2 style="margin: 12px 0 0; font-size: 28px; line-height: 1.6; font-weight: 600; letter-spacing: 0.1em">相談だけでも、大歓迎です。</h2>
+<p style="margin: 16px 0 0; font-size: 14px; max-width: 34em">「何をお願いすればいいか分からない」段階でも大丈夫です。お話を伺いながら、一緒に整理していきます。</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; flex: 0 1 320px">
+<a class="os-btn os-btn--white" href="contact.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 64px; padding: 0 24px; background: #ffffff; color: #1a1a1a; text-decoration: none; font-weight: 600; font-size: 15px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- フッター -->
+<footer style="background: #ffffff; border-top: 3px solid #EF7A00">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 40px; display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px">
+<img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー" style="height: 40px; width: auto; align-self: flex-start; display: block">
+<p style="margin: 0; font-size: 13px">株式会社ワン・ストーリー</p>
+<p style="margin: 8px 0 0; font-size: 13px; color: #303330">〒472-0001 愛知県知立市八橋町山田谷2-15</p>
+<p style="margin: 0; font-size: 13px; color: #303330">onestory310@gmail.com</p>
+<a class="ft-link" href="#" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 13px; color: #303330; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3h-3V6.8c0-.5.3-.8.8-.8H15z"></path></svg>Facebook</a>
+<p style="display: none"></p>
+</div>
+<nav aria-label="フッターナビゲーション" style="flex: 1 1 520px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0 32px; font-size: 13px; align-content: start">
+<a class="ft-link" href="index.html" style="padding: 10px 0; color: #303330; text-decoration: none">トップ</a>
+<a class="ft-link" href="service.html" style="padding: 10px 0; color: #303330; text-decoration: none">サービス</a>
+<a class="ft-link" href="price.html" style="padding: 10px 0; color: #303330; text-decoration: none">料金プラン</a>
+<a class="ft-link" href="works.html" style="padding: 10px 0; color: #303330; text-decoration: none">制作実績</a>
+<a class="ft-link" href="about.html" style="padding: 10px 0; color: #303330; text-decoration: none">私たちについて</a>
+<a class="ft-link" href="column.html" style="padding: 10px 0; color: #303330; text-decoration: none">コラム</a>
+<a class="ft-link" href="contact.html" style="padding: 10px 0; color: #303330; text-decoration: none">お問い合わせ</a>
+<a class="ft-link" href="tokushoho.html" style="padding: 10px 0; color: #303330; text-decoration: none">特定商取引法に基づく表記</a>
+<a class="ft-link" href="privacy.html" style="padding: 10px 0; color: #303330; text-decoration: none">プライバシーポリシー</a>
+</nav>
+</div>
+<div style="border-top: 1px solid #F2C08C">
+<p class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px 88px; font-family: 'Cormorant Garamond', serif; font-size: 11px; color: #303330; letter-spacing: 0.1em">© 2026 OneStory Inc.</p>
+</div>
 </footer>
-<script src="assets/main.js"></script>
+
+<!-- スマホ固定CTA -->
+<div class="sp-cta" style="position: sticky; bottom: 0; z-index: 30; padding: 12px 16px; background: #ffffff; border-top: 1px solid #F8D9B8">
+<a class="os-btn os-btn--primary" href="contact.html" style="display: flex; align-items: center; justify-content: space-between; height: 52px; padding: 0 20px; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+
+</div>
+</div>
+<script src="assets/site.js"></script>
 </body>
 </html>

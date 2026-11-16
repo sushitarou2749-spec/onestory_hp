@@ -1,257 +1,570 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>人を整える。仕組みを整える。未来を整える。｜株式会社ワン・ストーリー</title>
-<meta name="description" content="人が笑顔で働ける会社を、仕組みから。IT・AI・業務改善・人と組織へのアプローチを通して、人が安心して働き、本来の力を発揮できる会社づくりを支援します。">
-<meta property="og:title" content="人を整える。仕組みを整える。未来を整える。｜株式会社ワン・ストーリー">
-<meta property="og:description" content="人が笑顔で働ける会社を、仕組みから。IT・AI・業務改善・人と組織へのアプローチを通して、人が安心して働き、本来の力を発揮できる会社づくりを支援します。">
-<meta property="og:type" content="website">
-<link rel="icon" href="assets/favicon.png" type="image/png">
+<title>中小企業・個人事業主のホームページ制作・LP制作・SEO｜株式会社ワン・ストーリー</title>
+<meta name="description" content="中小企業・個人事業主のためのホームページ制作・LP制作・SEO対策。原稿づくりから公開後の改善まで、相談しやすい制作会社として伴走します。相談だけでも無料です。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&amp;family=Pinyon+Script&amp;family=Cormorant+Garamond:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff;color:#1a1a1a;font-family:"Noto Serif JP","Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-size:14.5px;line-height:2;letter-spacing:.05em}
+a{color:#C25500}a:hover{color:#C25500}
+.en{font-family:"Cormorant Garamond","Noto Serif JP",serif}
+.arrow{transition:transform .25s ease-out}
+.os-btn{transition:background-color .25s ease-out,color .25s ease-out}
+.os-btn--primary:hover{background:#9E4500 !important}
+.os-btn--ink:hover{background:#9E4500 !important}
+.os-btn--white:hover{background:#ffffff !important}
+.os-btn--outline:hover{background:#1a1a1a !important;color:#ffffff !important}
+.os-btn--inverse:hover{background:#f8bc63 !important}
+.os-btn--inverse-line:hover{background:#ffffff !important;color:#1a1a1a !important}
+.os-btn:hover .arrow,.os-link:hover .arrow,.os-more:hover .arrow{transform:translateX(4px)}
+.os-link{background-image:linear-gradient(#ef7a00,#ef7a00);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .3s ease-out}
+.os-link:hover{background-size:100% 1px}
+.os-more{transition:background-color .25s ease-out,color .25s ease-out}
+.os-more:hover{background:#1a1a1a !important;color:#ffffff !important;border-color:#1a1a1a !important}
+.nav-link{color:#1a1a1a;text-decoration:none;background-image:linear-gradient(#ef7a00,#ef7a00);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .3s ease-out}
+.nav-link:hover{color:#1a1a1a;background-size:100% 1px}
+.ft-link{color:#303330;text-decoration:none}
+.ft-link:hover{color:#C25500}
+.card-link{transition:border-color .25s ease-out}
+.card-link:hover{border-color:#1a1a1a !important}
+.card-link:hover .os-link-label{color:#C25500}
+a:focus-visible,button:focus-visible{outline:2px solid #1a1a1a;outline-offset:2px}
+.on-dark a:focus-visible,.on-dark button:focus-visible{outline-color:#f8bc63}
+.menu-btn{display:none !important}
+@media (max-width:960px){.nav-pc{display:none !important}.menu-btn{display:inline-flex !important}}
+@media (min-width:769px){.sp-cta{display:none !important}}
+@media (max-width:768px){.hero-en{font-size:56px !important}.hero-h1{font-size:22px !important}#top{height:auto !important;min-height:0 !important;max-height:none !important;flex-direction:column !important;align-items:stretch !important;padding-top:48px}#top>.wrap{order:1}#top .hero-photo{position:relative !important;order:2;top:auto !important;right:auto !important;bottom:auto !important;width:100% !important;height:260px !important;margin-top:40px;padding:16px !important}#top>div[aria-hidden="true"]{display:none !important}.sec{padding-top:56px !important;padding-bottom:56px !important}.wrap{padding-left:16px !important;padding-right:16px !important}}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+</style>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/site.css">
+<!-- Googleアナリティクス（GA4）：測定IDを取得したら、ここに計測タグを貼る -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "株式会社ワン・ストーリー", "url": "https://rika-hirasawa.com/", "logo": "https://rika-hirasawa.com/assets/logo-header.png", "founder": {"@type": "Person", "name": "平澤 利佳"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "パソコンやWebに詳しくなくても大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、大丈夫です。専門用語はできるだけ使わずにご説明し、分からないことはその都度お答えします。ご依頼いただく方の多くが、Webに詳しくない方です。"}}, {"@type": "Question", "name": "原稿や写真が用意できていなくても依頼できますか？", "acceptedAnswer": {"@type": "Answer", "text": "ご依頼いただけます。ヒアリングでお話を伺いながら、原稿づくりからお手伝いします。写真についても、今ある素材の活かし方や撮影のご相談に対応します。"}}, {"@type": "Question", "name": "費用は最初に確定しますか？ 追加料金はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "ご提案の段階で、含まれる内容と費用をお見積りとしてご提示します。途中で内容が増える場合は、事前にご相談し、ご了承をいただいてから進めます。"}}, {"@type": "Question", "name": "制作期間はどのくらいですか？", "acceptedAnswer": {"@type": "Answer", "text": "ページ数や内容によって変わります。目安は【要確認】です。公開したい時期が決まっている場合は、最初のご相談の際にお知らせください。"}}, {"@type": "Question", "name": "今あるホームページのリニューアルもできますか？", "acceptedAnswer": {"@type": "Answer", "text": "できます。今のサイトの良いところは残しながら、スマホでの見やすさや検索での見つかりやすさを見直します。"}}, {"@type": "Question", "name": "公開後に自分で更新することはできますか？", "acceptedAnswer": {"@type": "Answer", "text": "できます。お知らせやブログなど、ご自身で更新したい部分をあらかじめ伺い、更新しやすい形でおつくりします。更新をこちらにお任せいただくこともできます。"}}, {"@type": "Question", "name": "遠方でも依頼できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。全国からご依頼いただけます。打ち合わせはオンラインで行えます。"}}, {"@type": "Question", "name": "相談だけでも大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "もちろんです。「まだ依頼するか決めていない」「何をすればいいか分からない」という段階でのご相談も歓迎しています。"}}]}</script>
 </head>
 <body>
-<header class="site-header">
-  <div class="header-top">
-    <a class="logo" href="index.html">
-      <img src="assets/logo.png" alt="One Story">
-      <span class="name">株式会社ワン・ストーリー</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="gnav" id="gnav">
-    <ul>
-      <li><a href="index.html" class="current">HOME</a></li>
-      <li><a href="about.html">私たちについて</a></li>
-      <li><a href="business.html">企業・組織を整える</a></li>
-      <li><a href="program.html">プログラム</a></li>
-      <li><a href="human.html">人を整える</a></li>
-      <li><a href="wisdom.html">日本の智慧</a></li>
-      <li><a href="future.html">次世代へ</a></li>
-      <li><a href="column.html">コラム</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-    </ul>
-  </nav>
+<div style="background: #ffffff">
+
+<!-- ① ヘッダー -->
+<header style="position: sticky; top: 0; z-index: 20; background: #ffffff; border-bottom: 1px solid #F8D9B8">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="#top" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #1a1a1a">
+<img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー" style="height: 36px; width: auto; display: block">
+</a>
+<nav class="nav-pc" aria-label="グローバルナビゲーション" style="display: flex; align-items: center; gap: 32px; font-size: 13px; font-weight: 500">
+<a class="nav-link" href="service.html" style="padding: 6px 0">サービス</a>
+<a class="nav-link" href="price.html" style="padding: 6px 0">料金</a>
+<a class="nav-link" href="works.html" style="padding: 6px 0">制作実績</a>
+<a class="nav-link" href="about.html" style="padding: 6px 0">私たちについて</a>
+<a class="nav-link" href="column.html" style="padding: 6px 0">コラム</a>
+<a class="os-btn os-btn--primary" href="contact.html" style="display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 22px; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 13px">無料相談<svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</nav>
+<button class="menu-btn" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false" data-menu-open style="width: 44px; height: 44px; border: 1px solid #1a1a1a; background: #ffffff; align-items: center; justify-content: center; color: #1a1a1a; cursor: pointer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+</button>
+</div>
 </header>
-<div class="page-head">
-  <img class="botanical" src="assets/botanical.svg" alt="">
-  <div class="wrap">
-    <div class="inner">
-      <img class="hero-logo" src="assets/logo-wide.png" alt="One Story">
-      <h1>人を整える。仕組みを整える。未来を整える。</h1>
-    </div>
-  </div>
+<div id="sp-menu" class="sp-menu" hidden>
+<div class="sp-menu__bar"><img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー" style="height: 32px; width: auto"><button type="button" class="sp-menu__close" data-menu-close aria-label="メニューを閉じる"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+<nav aria-label="メニュー" class="sp-menu__nav">
+<a href="index.html"><span class="en">TOP</span>トップ</a>
+<a href="service.html"><span class="en">SERVICES</span>サービス</a>
+<a href="price.html"><span class="en">PRICE</span>料金プラン</a>
+<a href="works.html"><span class="en">WORKS</span>制作実績</a>
+<a href="about.html"><span class="en">ABOUT</span>私たちについて</a>
+<a href="column.html"><span class="en">COLUMN</span>コラム</a>
+</nav>
+<a class="sp-menu__cta" href="contact.html">無料で相談する<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 </div>
 
-<div class="hero">
-  <div class="hero-visual">
-    <div class="hero-copy">
-      <p class="catch">人が笑顔で働ける会社を、<br>仕組みから。</p>
-      <p class="sub">IT・AI・業務改善・人と組織へのアプローチを通して、<br>
-      人が安心して働き、本来の力を発揮できる会社づくりを支援します。</p>
-    </div>
-  </div>
-  <!-- 横長のメインビジュアル写真ができたら images/hero.jpg として置き、
-       上の div に class="hero-visual has-photo" を付けると背景に表示されます -->
+<!-- ② ファーストビュー（フルビューポート：ヘッダーを除いた画面の高さ） -->
+<section id="top" style="position: relative; height: calc(100vh - 73px); min-height: 600px; max-height: 900px; overflow: hidden; background: #ffffff; display: flex; align-items: center">
+<div class="hero-photo" role="img" aria-label="写真：自然光の入るオフィスで、ノートPCを開いて打ち合わせをする様子" style="position: absolute; right: 0; top: 0; bottom: 0; width: 46%; background: #EF7A00; display: flex; align-items: flex-end; justify-content: flex-start; padding: 32px; box-sizing: border-box">
+<div style="border: 1px dashed #C25500; padding: 10px 14px; max-width: 340px; font-size: 11px; line-height: 1.6; color: #1a1a1a; background: rgba(255,255,255,0.85)">
+<span class="en" style="display: block; font-size: 12px; letter-spacing: 0.2em; color: #C25500; font-weight: 500">VIDEO / PHOTO</span>
+自然光のオフィス・打ち合わせ・手元の作業風景の写真か、ゆっくり動く映像（10〜15秒ループ）。明るく暖かいトーンで。
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 54%; top: 0; bottom: 0; width: 1px; background: #1a1a1a; opacity: 0.15"></div>
+<div class="wrap" style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 32px; box-sizing: border-box">
+<div style="max-width: 600px; display: flex; flex-direction: column; gap: 24px; color: #1a1a1a">
+<p class="en" style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #303330"><span aria-hidden="true" style="display: inline-block; width: 24px; height: 1px; background: #ef7a00"></span>WEB PRODUCTION FOR SMALL BUSINESS</p>
+<p class="script hero-en" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 88px; line-height: 1.1; font-weight: 400; letter-spacing: 0">Your story,<br><span style="color: #E06A00">on the web.</span></p>
+<h1 class="hero-h1" style="margin: 8px 0 0; font-size: 28px; line-height: 1.6; font-weight: 600; letter-spacing: 0.1em">あなたの仕事の“物語”を、<br>伝わるホームページに。</h1>
+<p style="margin: 0; font-size: 15px; line-height: 1.9; max-width: 34em">中小企業・個人事業主のためのホームページ制作・LP制作・SEO対策。つくって終わりではなく、見つけてもらい、選ばれるところまで伴走します。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px">
+<a class="os-btn os-btn--primary" href="#contact" style="display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; height: 56px; min-width: 240px; padding: 0 24px; box-sizing: border-box; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="os-btn os-btn--outline" href="#price" style="display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; height: 56px; min-width: 200px; padding: 0 24px; box-sizing: border-box; background: transparent; border: 1px solid #1a1a1a; color: #1a1a1a; text-decoration: none; font-weight: 600; font-size: 14px">料金を見る<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+<p style="margin: 0; font-size: 12px">何から頼めばいいか分からない段階でも大丈夫です</p>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 32px; bottom: 0; display: flex; flex-direction: column; align-items: center; gap: 10px">
+<span class="en" style="font-size: 9px; letter-spacing: 0.2em; color: #1a1a1a; writing-mode: vertical-rl">SCROLL</span>
+<span style="display: block; width: 1px; height: 56px; background: #1a1a1a"></span>
+</div>
+</section>
+
+<!-- ③ 悩みへの共感 -->
+<section id="problem" class="sec" style="padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Problem</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">こんなお悩みはありませんか。</h2>
+<ul style="list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); border-top: 1px solid #F2C08C; border-left: 1px solid #F2C08C">
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 28px 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C25500" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg><span style="font-size: 14px; color: #303330">ホームページが何年も古いまま。スマホで見ると崩れている</span></li>
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 28px 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C25500" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg><span style="font-size: 14px; color: #303330">つくったのに、問い合わせがほとんど来ない</span></li>
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 28px 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C25500" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg><span style="font-size: 14px; color: #303330">自社の名前やサービスで検索しても出てこない</span></li>
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 28px 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C25500" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg><span style="font-size: 14px; color: #303330">何を載せればいいのか、自分たちでもうまく言葉にできない</span></li>
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 28px 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C25500" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg><span style="font-size: 14px; color: #303330">更新や修正を気軽に頼める相手がいない</span></li>
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 28px 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C25500" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg><span style="font-size: 14px; color: #303330">制作会社に頼むと高そうで、予算に見合うか不安</span></li>
+</ul>
+<!-- 解決への橋渡し -->
+<div style="margin-top: 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px; border-top: 1px solid #ef7a00; padding-top: 48px">
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0; font-size: 24px; line-height: 1.7; font-weight: 600; color: #C25500; letter-spacing: 0.1em">そのお悩み、ワン・ストーリーが<br>一緒に整理します。</p>
+<p style="margin: 16px 0 0; font-size: 14px; color: #303330">何が課題なのかを、お話しの中で一緒に見つけるところから始めます。</p>
+</div>
+<div role="img" aria-label="PCとスマートフォンに表示された中小企業のホームページの例" style="flex: 1 1 480px; min-width: 0; position: relative; height: 280px; background: #ffffff">
+<div style="position: absolute; left: 32px; top: 32px; width: 68%; height: 200px; background: #ffffff; border: 1px solid #F2C08C; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #737573">PC モックアップ画像</div>
+<div style="position: absolute; right: 40px; bottom: 24px; width: 104px; height: 200px; background: #ffffff; border: 1px solid #F2C08C; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 11px; color: #737573">スマホ<br>モックアップ</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ④ 選ばれる理由 -->
+<section id="features" class="sec" style="background: #ffffff; padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Features</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">ワン・ストーリーが選ばれる4つの理由。</h2>
+<div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); border-top: 1px solid #F2C08C">
+<article style="padding: 32px 24px 32px 0; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 12px">
+<span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">01</span>
+<h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">話すだけで、伝わる言葉に</h3>
+<p style="margin: 0; font-size: 14px; color: #303330">丁寧なヒアリングで、強みやお客様に伝えたいことを一緒に言葉にします。原稿づくりからお手伝いできます。</p>
+</article>
+<article style="padding: 32px 24px 32px 0; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 12px">
+<span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">02</span>
+<h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">「見つけてもらう」ことから設計</h3>
+<p style="margin: 0; font-size: 14px; color: #303330">キーワード調査をもとにページの構成と文章を設計し、検索で見つけてもらえるサイトにします。</p>
+</article>
+<article style="padding: 32px 24px 32px 0; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 12px">
+<span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">03</span>
+<h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">スマホで見やすく、表示が速い</h3>
+<p style="margin: 0; font-size: 14px; color: #303330">多くのお客様が見るスマホでの見やすさを最優先に、軽くて速いサイトをつくります。</p>
+</article>
+<article style="padding: 32px 24px 32px 0; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 12px">
+<span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">04</span>
+<h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">公開後も、気軽に相談できる</h3>
+<p style="margin: 0; font-size: 14px; color: #303330">更新・修正・アクセス解析をもとにした改善まで、継続してサポートします。</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ⑤ サービス -->
+<section id="service" class="sec" style="padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Services</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">Webサイト制作・LP制作・SEO・システム開発。</h2>
+<div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<a class="card-link" href="service.html" style="display: flex; flex-direction: column; gap: 24px; padding: 24px; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13"></rect><path d="M8 21h8M12 17v4M3 8h18"></path></svg><span class="en" style="font-size: 18px; font-weight: 500; color: #ef7a00">01</span></div>
+<div><h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">ホームページ制作</h3><p class="en" style="margin: 4px 0 0; font-size: 10px; letter-spacing: 0.1em; color: #737573">Website Production</p></div>
+<p style="margin: 0; font-size: 14px; color: #303330; flex: 1; border-top: 1px solid #F8D9B8; padding-top: 16px">会社・店舗・事業の顔になるサイトを新規制作・リニューアルします。</p>
+<span class="en os-link-label" style="display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 0.16em; font-weight: 500">VIEW DETAILS<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg></span>
+</a>
+<a class="card-link" href="service.html" style="display: flex; flex-direction: column; gap: 24px; padding: 24px; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20"></rect><path d="M9 7h6M9 11h6M10 16h4"></path></svg><span class="en" style="font-size: 18px; font-weight: 500; color: #ef7a00">02</span></div>
+<div><h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">LP（ランディングページ）制作</h3><p class="en" style="margin: 4px 0 0; font-size: 10px; letter-spacing: 0.1em; color: #737573">Landing Page</p></div>
+<p style="margin: 0; font-size: 14px; color: #303330; flex: 1; border-top: 1px solid #F8D9B8; padding-top: 16px">商品・サービス・キャンペーンの申込を増やす1ページのサイトをつくります。</p>
+<span class="en os-link-label" style="display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 0.16em; font-weight: 500">VIEW DETAILS<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg></span>
+</a>
+<a class="card-link" href="service.html" style="display: flex; flex-direction: column; gap: 24px; padding: 24px; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.5-4.5M8 12l2 2 4-4"></path></svg><span class="en" style="font-size: 18px; font-weight: 500; color: #ef7a00">03</span></div>
+<div><h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">SEO対策・集客改善</h3><p class="en" style="margin: 4px 0 0; font-size: 10px; letter-spacing: 0.1em; color: #737573">SEO &amp; Marketing</p></div>
+<p style="margin: 0; font-size: 14px; color: #303330; flex: 1; border-top: 1px solid #F8D9B8; padding-top: 16px">キーワード調査、内部対策、コラム記事の企画・制作。AI検索で紹介されるための対策も行います。</p>
+<span class="en os-link-label" style="display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 0.16em; font-weight: 500">VIEW DETAILS<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg></span>
+</a>
+<a class="card-link" href="service.html" style="display: flex; flex-direction: column; gap: 24px; padding: 24px; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"></path></svg><span class="en" style="font-size: 18px; font-weight: 500; color: #ef7a00">04</span></div>
+<div><h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">Webシステム・ツール開発</h3><p class="en" style="margin: 4px 0 0; font-size: 10px; letter-spacing: 0.1em; color: #737573">System Development</p></div>
+<p style="margin: 0; font-size: 14px; color: #303330; flex: 1; border-top: 1px solid #F8D9B8; padding-top: 16px">予約、会員ページ、業務用ツールなど、必要な機能を開発します。</p>
+<span class="en os-link-label" style="display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 0.16em; font-weight: 500">VIEW DETAILS<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg></span>
+</a>
+</div>
+<!-- 対象業種タグ -->
+<div style="margin-top: 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; border-top: 1px solid #F8D9B8; padding-top: 32px">
+<p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #737573">FOR</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<li style="font-size: 13px; padding: 6px 14px; background: #FFE0BD; color: #1a1a1a">店舗</li>
+<li style="font-size: 13px; padding: 6px 14px; background: #FFE0BD; color: #1a1a1a">サロン</li>
+<li style="font-size: 13px; padding: 6px 14px; background: #FFE0BD; color: #1a1a1a">士業</li>
+<li style="font-size: 13px; padding: 6px 14px; background: #FFE0BD; color: #1a1a1a">教室・スクール</li>
+<li style="font-size: 13px; padding: 6px 14px; background: #FFE0BD; color: #1a1a1a">職人・工務店</li>
+<li style="font-size: 13px; padding: 6px 14px; background: #FFE0BD; color: #1a1a1a">小規模メーカー</li>
+<li style="font-size: 13px; padding: 6px 14px; background: #FFE0BD; color: #1a1a1a">個人事業主</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- ⑥ 制作実績 -->
+<section id="works" class="sec" style="background: #ffffff; padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+<div>
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Works</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">制作実績。</h2>
+</div>
+<a class="os-more en" href="works.html" style="display: inline-flex; align-items: center; gap: 12px; height: 44px; padding: 0 8px 0 20px; border: 1px solid #1a1a1a; border-radius: 999px; color: #1a1a1a; text-decoration: none; font-size: 12px; letter-spacing: 0.16em; font-weight: 500">VIEW ALL<span style="width: 28px; height: 28px; border-radius: 50%; background: #C25500; color: #ffffff; display: flex; align-items: center; justify-content: center"><svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+<p style="margin: 24px 0 0; padding: 10px 14px; border: 1px dashed #C25500; font-size: 11px; display: inline-block; background: #ffffff">【要確認】掲載許可の取れた実績に差し替え。それまではプレースホルダー</p>
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+<a class="card-link" href="works.html" style="display: flex; flex-direction: column; background: #ffffff; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div role="img" aria-label="実績サムネイル：〇〇（業種）様 ホームページのトップ画面" style="aspect-ratio: 16 / 10; background: #FFE4C7; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #303330">サムネイル（サイトのトップ画面）</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<span class="en" style="font-size: 11px; color: #737573; letter-spacing: 0.1em">Beauty Salon ／ 美容サロン</span>
+<h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">【要確認】〇〇様 ホームページ制作</h3>
+<p style="margin: 0; font-size: 13px; color: #303330">【要確認】ひとこと：どんな課題をどう解決したか</p>
+</div>
+</a>
+<a class="card-link" href="works.html" style="display: flex; flex-direction: column; background: #ffffff; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div role="img" aria-label="実績サムネイル：〇〇（業種）様 LPのファーストビュー" style="aspect-ratio: 16 / 10; background: #FFE4C7; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #303330">サムネイル（LPのファーストビュー）</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<span class="en" style="font-size: 11px; color: #737573; letter-spacing: 0.1em">Temple ／ 寺院・団体</span>
+<h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">【要確認】〇〇様 LP制作</h3>
+<p style="margin: 0; font-size: 13px; color: #303330">【要確認】ひとこと：どんな課題をどう解決したか</p>
+</div>
+</a>
+<a class="card-link" href="works.html" style="display: flex; flex-direction: column; background: #ffffff; border: 1px solid #F2C08C; text-decoration: none; color: #1a1a1a">
+<div role="img" aria-label="実績サムネイル：〇〇（業種）様 会員ページの画面" style="aspect-ratio: 16 / 10; background: #FFE4C7; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #303330">サムネイル（システム画面）</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<span class="en" style="font-size: 11px; color: #737573; letter-spacing: 0.1em">System ／ システム開発</span>
+<h3 style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600">【要確認】〇〇様 会員サイト開発</h3>
+<p style="margin: 0; font-size: 13px; color: #303330">【要確認】ひとこと：どんな課題をどう解決したか</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ⑦ 料金プラン -->
+<section id="price" class="sec" style="padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Price</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">必要なものだけを、無理のない予算で。</h2>
+<div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; align-items: stretch">
+<article style="border: 1px solid #F2C08C; padding: 32px 24px; display: flex; flex-direction: column; gap: 24px">
+<div><p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #737573">LIGHT</p><h3 style="margin: 4px 0 0; font-size: 16px; font-weight: 600">ライト</h3></div>
+<p style="margin: 0; font-size: 13px; color: #303330">こんな方に：まずは名刺代わりのサイトが欲しい</p>
+<p style="margin: 0; display: flex; align-items: baseline; gap: 6px; border-top: 1px solid #F8D9B8; border-bottom: 1px solid #F8D9B8; padding: 20px 0"><span class="en" style="font-size: 28px; font-weight: 500; padding: 0 8px; border: 1px dashed #C25500">【要確認】</span><span style="font-size: 13px">円〜（税込）</span></p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 13px; flex: 1">
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #b5b3b5; transform: translateY(-3px)"></span>〜5ページ</li>
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #b5b3b5; transform: translateY(-3px)"></span>スマホ対応</li>
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #b5b3b5; transform: translateY(-3px)"></span>お問い合わせフォーム</li>
+</ul>
+<p style="margin: 0; font-size: 11px; color: #737573">備考：原稿・写真はご用意いただく前提です</p>
+</article>
+<article style="border: 1px solid #1a1a1a; padding: 32px 24px; display: flex; flex-direction: column; gap: 24px; position: relative">
+<span style="position: absolute; top: -1px; right: -1px; background: #C25500; color: #ffffff; font-size: 11px; font-weight: 600; padding: 4px 14px">おすすめ</span>
+<div><p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #C25500">STANDARD</p><h3 style="margin: 4px 0 0; font-size: 16px; font-weight: 600">スタンダード</h3></div>
+<p style="margin: 0; font-size: 13px; color: #303330">こんな方に：集客につながるサイトにしたい</p>
+<p style="margin: 0; display: flex; align-items: baseline; gap: 6px; border-top: 1px solid #F8D9B8; border-bottom: 1px solid #F8D9B8; padding: 20px 0"><span class="en" style="font-size: 28px; font-weight: 500; padding: 0 8px; border: 1px dashed #C25500">【要確認】</span><span style="font-size: 13px">円〜（税込）</span></p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 13px; flex: 1">
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #ef7a00; transform: translateY(-3px)"></span>〜10ページ</li>
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #ef7a00; transform: translateY(-3px)"></span>ヒアリング・原稿作成サポート</li>
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #ef7a00; transform: translateY(-3px)"></span>基本SEO設計（キーワード調査・構成）</li>
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #ef7a00; transform: translateY(-3px)"></span>スマホ対応・お問い合わせフォーム</li>
+</ul>
+<p style="margin: 0; font-size: 11px; color: #737573">備考：【要確認】</p>
+</article>
+<article style="border: 1px solid #F2C08C; padding: 32px 24px; display: flex; flex-direction: column; gap: 24px">
+<div><p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #737573">LANDING PAGE</p><h3 style="margin: 4px 0 0; font-size: 16px; font-weight: 600">LP制作</h3></div>
+<p style="margin: 0; font-size: 13px; color: #303330">こんな方に：商品・サービスの申込を増やしたい</p>
+<p style="margin: 0; display: flex; align-items: baseline; gap: 6px; border-top: 1px solid #F8D9B8; border-bottom: 1px solid #F8D9B8; padding: 20px 0"><span class="en" style="font-size: 28px; font-weight: 500; padding: 0 8px; border: 1px dashed #C25500">【要確認】</span><span style="font-size: 13px">円〜（税込）</span></p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 13px; flex: 1">
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #b5b3b5; transform: translateY(-3px)"></span>1ページ構成</li>
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #b5b3b5; transform: translateY(-3px)"></span>構成案・コピー作成</li>
+<li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: none; width: 4px; height: 4px; background: #b5b3b5; transform: translateY(-3px)"></span>スマホ対応・申込フォーム</li>
+</ul>
+<p style="margin: 0; font-size: 11px; color: #737573">備考：【要確認】</p>
+</article>
+</div>
+<article style="margin-top: 24px; border: 1px solid #F2C08C; padding: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 48px">
+<div style="flex: 0 1 200px"><p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #737573">SUPPORT</p><h3 style="margin: 4px 0 0; font-size: 16px; font-weight: 600">月額サポート</h3></div>
+<p style="margin: 0; flex: 1 1 360px; font-size: 13px; color: #303330">公開後も任せたい方に。サーバー・ドメイン・SSLの管理、軽微な更新、アクセスレポート。</p>
+<p style="margin: 0; display: flex; align-items: baseline; gap: 6px"><span style="font-size: 13px">月額</span><span class="en" style="font-size: 24px; font-weight: 500; padding: 0 8px; border: 1px dashed #C25500">【要確認】</span><span style="font-size: 13px">円〜</span></p>
+</article>
+<div style="margin-top: 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; border-top: 1px solid #F8D9B8; padding-top: 32px">
+<p style="margin: 0; font-size: 14px">お見積りは無料です。ご予算に合わせた内容もご相談ください。</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
+<a class="os-link" href="price.html" style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #C25500; text-decoration: none; padding: 8px 0">詳しい料金を見る<svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="os-btn os-btn--primary" href="#contact" style="display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; height: 56px; min-width: 240px; padding: 0 24px; box-sizing: border-box; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ⑧ 制作の流れ -->
+<section id="flow" class="sec" style="background: #ffffff; padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div>
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Flow</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">ご相談から公開までの流れ。</h2>
+</div>
+<p style="margin: 0; font-size: 13px; color: #303330">目安期間：<span style="padding: 2px 8px; border: 1px dashed #C25500; background: #ffffff">【要確認】例「最短1か月〜」</span></p>
+</div>
+<ol style="list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); border-top: 1px solid #F2C08C; border-left: 1px solid #F2C08C; background: #ffffff">
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">01</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">お問い合わせ</h3><p style="margin: 0; font-size: 13px; color: #303330">フォームからお気軽にご連絡ください。</p></li>
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">02</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">無料ヒアリング</h3><p style="margin: 0; font-size: 13px; color: #303330">オンライン／対面で、お仕事やお悩みを伺います。</p></li>
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">03</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">ご提案・お見積り</h3><p style="margin: 0; font-size: 13px; color: #303330">必要な内容と費用を、分かりやすくご提示します。</p></li>
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">04</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">構成・原稿づくり</h3><p style="margin: 0; font-size: 13px; color: #303330">ページの構成と文章を一緒に考えます。</p></li>
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">05</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">デザイン・制作</h3><p style="margin: 0; font-size: 13px; color: #303330">スマホでの見やすさを軸にデザインし、制作します。</p></li>
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">06</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">確認・修正</h3><p style="margin: 0; font-size: 13px; color: #303330">実際の画面を見ながら、気になる点を直します。</p></li>
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">07</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">公開</h3><p style="margin: 0; font-size: 13px; color: #303330">サーバーやドメインの設定も含めて公開します。</p></li>
+<li style="padding: 24px; border-right: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C; display: flex; flex-direction: column; gap: 8px"><span class="en" style="font-size: 18px; line-height: 1; font-weight: 500; color: #ef7a00">08</span><h3 style="margin: 0; font-size: 16px; font-weight: 600">運用サポート</h3><p style="margin: 0; font-size: 13px; color: #303330">更新や改善のご相談を、公開後も続けて承ります。</p></li>
+</ol>
+</div>
+</section>
+
+<!-- ⑨ 私たちについて -->
+<section id="about" class="sec" style="padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 520px; min-width: 0">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">About</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">Webも、「伝わる仕組み」としてつくります。</h2>
+<p style="margin: 24px 0 0; font-size: 14px; color: #303330; max-width: 38em">ワン・ストーリーは、人と仕組みを整えることに向き合ってきた会社です。だからこそホームページも、見た目だけでなく「お客様に伝わり、選ばれる仕組み」としてつくります。</p>
+<a class="os-more en" href="about.html" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 12px; height: 44px; padding: 0 8px 0 20px; border: 1px solid #1a1a1a; border-radius: 999px; color: #1a1a1a; text-decoration: none; font-size: 12px; letter-spacing: 0.16em; font-weight: 500">ABOUT US<span style="width: 28px; height: 28px; border-radius: 50%; background: #C25500; color: #ffffff; display: flex; align-items: center; justify-content: center"><svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; border: 1px solid #F2C08C; display: flex; flex-wrap: wrap">
+<div role="img" aria-label="Web担当 平澤 林汰朗の写真" style="flex: 0 0 180px; min-height: 220px; background: #ffffff; border-right: 1px solid #F2C08C; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 11px; line-height: 1.6; color: #303330">写真（後日差し替え）</div>
+<div style="flex: 1 1 200px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #737573">WEB DIRECTOR</p>
+<p style="margin: 0; font-size: 16px; font-weight: 600">平澤 林汰朗<span style="font-size: 11px; font-weight: 400; color: #737573; margin-left: 10px">Web担当</span></p>
+<p style="margin: 8px 0 0; font-size: 13px; color: #303330; border-top: 1px solid #F8D9B8; padding-top: 16px">専門用語を使わず、分かるまでご説明します。小さな疑問からお気軽にご相談ください。</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ⑩ よくある質問 -->
+<section id="faq" class="sec" style="background: #ffffff; padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 32px 80px">
+<div style="flex: 0 1 280px">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Q&amp;A</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">よくある質問。</h2>
+<p style="margin: 16px 0 0; font-size: 13px; color: #303330">ここにないことも、お気軽にお尋ねください。</p>
+</div>
+<div style="flex: 1 1 560px; min-width: 0; border-top: 1px solid #F2C08C">
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-0" aria-expanded="true" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">パソコンやWebに詳しくなくても大丈夫ですか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(45deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-0" class="faq-a">
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">はい、大丈夫です。専門用語はできるだけ使わずにご説明し、分からないことはその都度お答えします。ご依頼いただく方の多くが、Webに詳しくない方です。</p>
+</div>
+</div>
 </div>
 
-<section class="tight center">
-  <div class="wrap-narrow">
-    <p><a class="btn" href="contact.html">会社の課題を相談する</a>
-    <span class="btn-note">何が問題なのか分からない段階でも大丈夫です。</span></p>
-  </div>
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-1" aria-expanded="false" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">原稿や写真が用意できていなくても依頼できますか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(0deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-1" class="faq-a" hidden>
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">ご依頼いただけます。ヒアリングでお話を伺いながら、原稿づくりからお手伝いします。写真についても、今ある素材の活かし方や撮影のご相談に対応します。</p>
+</div>
+</div>
+</div>
+
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-2" aria-expanded="false" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">費用は最初に確定しますか？ 追加料金はかかりますか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(0deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-2" class="faq-a" hidden>
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">ご提案の段階で、含まれる内容と費用をお見積りとしてご提示します。途中で内容が増える場合は、事前にご相談し、ご了承をいただいてから進めます。</p>
+</div>
+</div>
+</div>
+
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-3" aria-expanded="false" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">制作期間はどのくらいですか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(0deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-3" class="faq-a" hidden>
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">ページ数や内容によって変わります。目安は【要確認】です。公開したい時期が決まっている場合は、最初のご相談の際にお知らせください。</p>
+</div>
+</div>
+</div>
+
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-4" aria-expanded="false" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">今あるホームページのリニューアルもできますか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(0deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-4" class="faq-a" hidden>
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">できます。今のサイトの良いところは残しながら、スマホでの見やすさや検索での見つかりやすさを見直します。</p>
+</div>
+</div>
+</div>
+
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-5" aria-expanded="false" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">公開後に自分で更新することはできますか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(0deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-5" class="faq-a" hidden>
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">できます。お知らせやブログなど、ご自身で更新したい部分をあらかじめ伺い、更新しやすい形でおつくりします。更新をこちらにお任せいただくこともできます。</p>
+</div>
+</div>
+</div>
+
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-6" aria-expanded="false" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">遠方でも依頼できますか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(0deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-6" class="faq-a" hidden>
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">はい。全国からご依頼いただけます。打ち合わせはオンラインで行えます。</p>
+</div>
+</div>
+</div>
+
+
+<div style="border-bottom: 1px solid #F2C08C">
+<h3 style="margin: 0; font-size: 14px">
+<button type="button" class="faq-q" aria-controls="faq-a-7" aria-expanded="false" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; padding: 18px 4px; background: transparent; border: 0; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: #1a1a1a; line-height: 1.6">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #ef7a00; width: 20px">Q</span>
+<span style="flex: 1">相談だけでも大丈夫ですか？</span>
+<svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="flex: none; transition: transform .25s ease-out; transform: rotate(0deg)"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</h3>
+<div id="faq-a-7" class="faq-a" hidden>
+<div style="display: flex; gap: 16px; padding: 0 4px 24px">
+<span class="en" style="flex: none; font-size: 18px; font-weight: 500; color: #b5b3b5; width: 20px; line-height: 1.4">A</span>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #303330">もちろんです。「まだ依頼するか決めていない」「何をすればいいか分からない」という段階でのご相談も歓迎しています。</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="script">About</span>
-      <h2>One Story について</h2>
-    </div>
-    <div class="about-intro reveal">
-      <div class="about-text">
-        <p class="intro-catch">人を整える。仕組みを整える。</p>
-        <p class="intro-role">代表取締役　平澤 利佳（RiKA.）</p>
-        <p>1982年生まれ、愛知県出身。保育士として9年間勤めたのち、いくつかの事業を経て、
-        人の心と向き合うカウンセラーとして独立しました。</p>
-        <p>以来18年以上にわたり、人の心や潜在意識、身体、自律神経を整える仕事に携わってきました。
-        延べ数え切れないほどの方と向き合うなかで見えてきたのは、
-        個人の悩みの多くが、その人が身を置く「会社」や「働き方」とつながっているということでした。</p>
-        <p>どれだけ本人が整っても、職場の仕組みが人を追い詰めていれば、また同じところに戻ってしまう。
-        そこから私は、人だけでなく、会社や社会の仕組みそのものに目を向けるようになりました。</p>
-        <p>人を整えるだけでも足りない。仕組みを整えるだけでも足りない。<br>
-        その両方を一緒に整えてはじめて、会社は自然に回りはじめます。</p>
-        <p>見える世界（業務・仕組み・IT・AI）と、見えない世界（人・心・信頼・職場の空気）。
-        その両方をつなぎながら、人が笑顔で働ける会社づくりをお手伝いしています。</p>
-        <p style="margin-top:30px;"><a class="more" href="about.html">私たちについて、もっと見る →</a></p>
-      </div>
-      <div class="about-photo">
-        <img src="images/rika.jpg" alt="代表 平澤利佳">
-      </div>
-    </div>
-  </div>
+<!-- ⑪ コラム（NewsList型） -->
+<section id="column" class="sec" style="padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 32px 80px">
+<div style="flex: 0 1 280px; display: flex; flex-direction: column; align-items: flex-start">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #E06A00">Column</p>
+<h2 style="margin: 12px 0 0; font-size: 20px; line-height: 1.7; font-weight: 600; letter-spacing: 0.1em">ホームページと集客のコラム。</h2>
+<a class="os-more en" href="column.html" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 12px; height: 44px; padding: 0 8px 0 20px; border: 1px solid #1a1a1a; border-radius: 999px; color: #1a1a1a; text-decoration: none; font-size: 12px; letter-spacing: 0.16em; font-weight: 500">VIEW ALL<span style="width: 28px; height: 28px; border-radius: 50%; background: #C25500; color: #ffffff; display: flex; align-items: center; justify-content: center"><svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+<ul style="flex: 1 1 560px; min-width: 0; list-style: none; margin: 0; padding: 0; border-top: 1px solid #F8D9B8">
+<li style="border-bottom: 1px solid #F8D9B8"><a class="os-link-row" href="column.html" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding: 24px 4px; text-decoration: none; color: #1a1a1a"><time class="en" datetime="2026-11-01" style="font-size: 11px; color: #737573; letter-spacing: 0.1em; width: 80px">2026.11.01</time><span style="font-size: 11px; color: #1a1a1a; background: #FFE0BD; padding: 2px 10px">ホームページ制作</span><span style="flex: 1 1 320px; font-size: 14px; font-weight: 500">【ダミー】ホームページ制作を頼む前に、準備しておきたい5つのこと</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></li>
+<li style="border-bottom: 1px solid #F8D9B8"><a class="os-link-row" href="column.html" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding: 24px 4px; text-decoration: none; color: #1a1a1a"><time class="en" datetime="2026-10-20" style="font-size: 11px; color: #737573; letter-spacing: 0.1em; width: 80px">2026.10.20</time><span style="font-size: 11px; color: #1a1a1a; background: #FFE0BD; padding: 2px 10px">SEO</span><span style="flex: 1 1 320px; font-size: 14px; font-weight: 500">【ダミー】自分のお店の名前で検索しても出てこないときに確認したいこと</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></li>
+<li style="border-bottom: 1px solid #F8D9B8"><a class="os-link-row" href="column.html" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding: 24px 4px; text-decoration: none; color: #1a1a1a"><time class="en" datetime="2026-10-05" style="font-size: 11px; color: #737573; letter-spacing: 0.1em; width: 80px">2026.10.05</time><span style="font-size: 11px; color: #1a1a1a; background: #FFE0BD; padding: 2px 10px">集客</span><span style="flex: 1 1 320px; font-size: 14px; font-weight: 500">【ダミー】ホームページとLPのちがい。どちらをつくるべきか</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></li>
+</ul>
+</div>
 </section>
 
-<section class="bg-mint">
-  <div class="wrap-narrow center">
-    <span class="script">Concept</span>
-    <h2>私たちが考える「会社を整える」</h2>
-    <hr class="rule">
-    <p class="lead-copy">会社の問題は、システムだけでは解決できません。<br>
-    業務、仕組み、人、コミュニケーション、経営者の状態。<br>
-    それぞれは、すべてつながっています。</p>
-    <p class="lead-copy" style="margin-top:1.5em;">だから私たちは、目に見える課題だけではなく、<br>
-    その奥にある原因まで丁寧に見ていきます。</p>
-  </div>
+<!-- ⑫ CTA帯 -->
+<section id="contact" style="background: #EF7A00; color: #1a1a1a; padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
+<div style="flex: 1 1 480px; min-width: 0">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #ffffff">Contact</p>
+<h2 style="margin: 12px 0 0; font-size: 28px; line-height: 1.6; font-weight: 600; letter-spacing: 0.1em">相談だけでも、大歓迎です。</h2>
+<p style="margin: 16px 0 0; font-size: 14px; max-width: 34em">「何をお願いすればいいか分からない」段階でも大丈夫です。お話を伺いながら、一緒に整理していきます。</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; flex: 0 1 320px">
+<a class="os-btn os-btn--white" href="contact.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 64px; padding: 0 24px; background: #ffffff; color: #1a1a1a; text-decoration: none; font-weight: 600; font-size: 15px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="script">Business</span>
-      <h2>私たちの3つの領域</h2>
-    </div>
-    <div class="cards reveal">
-      <article class="card">
-        <div class="thumb"></div>
-        <p class="en">BUSINESS</p>
-        <h3>企業・組織を整える</h3>
-        <p class="tags">業務改善／IT／AI／システム開発／組織づくり</p>
-        <p>人が頑張り続ける会社から、<br>仕組みが人を支える会社へ。</p>
-        <a class="more" href="business.html">詳しく見る →</a>
-      </article>
-      <article class="card">
-        <div class="thumb"></div>
-        <p class="en">HUMAN</p>
-        <h3>人を整える</h3>
-        <p class="tags">経営者・リーダーの心身のコンディショニング／対話／本質回帰</p>
-        <p>会社を整える人自身にも、余白を。</p>
-        <a class="more" href="human.html">詳しく見る →</a>
-      </article>
-      <article class="card">
-        <div class="thumb"></div>
-        <p class="en">FUTURE</p>
-        <h3>未来へつなぐ</h3>
-        <p class="tags">日本の智慧／自然／文化／家族／次世代への教育</p>
-        <p>新しい技術と、受け継いできた智慧を、次の世代へ。</p>
-        <a class="more" href="wisdom.html">私たちの想い →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="bg-blush">
-  <div class="wrap-narrow center">
-    <span class="script">Our Thought</span>
-    <h2>想い</h2>
-    <hr class="rule">
-    <div class="statement">
-      <p>目指しているのは、<br>便利なシステムを増やすことではありません。</p>
-    </div>
-    <hr class="rule">
-    <p class="lead-copy">人が迷わず働けること。<br>
-    引き継ぎがスムーズにできること。<br>
-    そして、現場にも経営者にも心の余白が生まれること。</p>
-    <p class="lead-copy" style="margin-top:1.5em;">そのために、会社に本当に合った仕組みを、<br>一緒につくり育てていきます。</p>
-    <p style="margin-top:34px;"><a class="more" href="about.html">私たちについて →</a></p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap-mid">
-    <div class="sec-head">
-      <span class="script">Check</span>
-      <h2>こんなお悩みはありませんか？</h2>
-    </div>
-    <ul class="check-list reveal">
-      <li>特定の人にしか分からない仕事がある</li>
-      <li>社長がいないと判断できない</li>
-      <li>Excel、LINE、紙、複数のアプリに情報が散らばっている</li>
-      <li>「あの資料どこ？」が日常になっている</li>
-      <li>同じ情報を何度も入力している</li>
-      <li>システムを導入したけれど、使いこなせていない</li>
-      <li>経営者自身が現場の仕事から抜けられない</li>
-    </ul>
-    <p class="center" style="margin-top:34px;"><a class="more" href="business.html">課題の見つけ方をもっと見る →</a></p>
-  </div>
-</section>
-
-<section class="bg-gray">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="script">Program</span>
-      <h2>3つのステップでご一緒します</h2>
-    </div>
-    <div class="steps reveal">
-      <article class="step">
-        <span class="step-no">1</span>
-        <h3>気づく</h3>
-        <p>「会社の課題は何か」を見える化する。<br>経営者が現状を客観的に把握する。</p>
-        <p class="price">1Day講座</p>
-      </article>
-      <article class="step">
-        <span class="step-no">2</span>
-        <h3>設計する</h3>
-        <p>理念・人・業務・IT・AIを一体でデザインする。<br>「どういう会社を目指すのか」を明確にする。</p>
-        <p class="price">2日間合宿</p>
-      </article>
-      <article class="step">
-        <span class="step-no">3</span>
-        <h3>定着させる</h3>
-        <p>ヒアリング、業務改善、システム構築、AI活用、社員教育、経営者サポートまで継続的に支援する。</p>
-        <p class="price">伴走サポート</p>
-      </article>
-    </div>
-    <p class="center" style="margin-top:40px;"><a class="btn ghost" href="program.html">プログラムを見る</a></p>
-    <p class="center" style="margin-top:22px;"><a class="more" href="docs/onestory-service.pdf" target="_blank" rel="noopener">サービス資料（PDF）を見る →</a></p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap-mid">
-    <div class="sec-head">
-      <span class="script">Column</span>
-      <h2>お知らせ・コラム</h2>
-    </div>
-    <ul class="post-list">
-      <li><a href="column.html"><p class="meta">2026.00.00<span class="cat">会社を整える</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-      <li><a href="column.html"><p class="meta">2026.00.00<span class="cat">人を整える</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-      <li><a href="column.html"><p class="meta">2026.00.00<span class="cat">日本の智慧</span></p><h3>記事タイトルがここに入ります</h3></a></li>
-    </ul>
-    <p class="center" style="margin-top:34px;"><a class="more" href="column.html">一覧を見る →</a></p>
-  </div>
-</section>
-<section class="cta-band">
-  <div class="wrap-narrow">
-    <h2>まずは、今感じている「困った」を聞かせてください。</h2>
-    <p>「何をお願いすればいいのか分からない」「システムが必要なのかも分からない」<br>
-    そんな状態でも大丈夫です。お話を伺いながら、一緒に整理していきます。</p>
-    <p style="margin-top:28px;"><a class="btn" href="contact.html">会社の課題を相談する</a></p>
-  </div>
-</section>
-<footer class="site-footer">
-  <div class="wrap">
-    <ul class="footer-nav">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">私たちについて</a></li>
-      <li><a href="business.html">企業・組織を整える</a></li>
-      <li><a href="program.html">プログラム</a></li>
-      <li><a href="human.html">人を整える</a></li>
-      <li><a href="wisdom.html">日本の智慧</a></li>
-      <li><a href="future.html">次世代へ</a></li>
-      <li><a href="column.html">コラム</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-      <li><a href="docs/onestory-service.pdf" target="_blank" rel="noopener">サービス資料（PDF）</a></li>
-    </ul>
-    <p class="copyright">&copy; 2026 株式会社ワン・ストーリー &nbsp;/&nbsp; <a href="tokushoho.html">特定商取引法に基づく表記</a></p>
-  </div>
+<!-- ⑬ フッター -->
+<footer style="background: #ffffff; color: #1a1a1a; border-top: 3px solid #EF7A00">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 40px; display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px">
+<img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー" style="height: 40px; width: auto; align-self: flex-start; display: block">
+<p style="margin: 0; font-size: 13px">株式会社ワン・ストーリー</p>
+<p style="margin: 8px 0 0; font-size: 13px; color: #303330">〒472-0001 愛知県知立市八橋町山田谷2-15</p>
+<p style="margin: 0; font-size: 13px; color: #303330">onestory310@gmail.com</p>
+<a class="ft-link" href="#" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 13px; color: #303330; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3h-3V6.8c0-.5.3-.8.8-.8H15z"></path></svg>Facebook</a>
+<p style="display: none"></p>
+</div>
+<nav aria-label="フッターナビゲーション" style="flex: 1 1 520px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0 32px; font-size: 13px; align-content: start">
+<a class="ft-link" href="index.html" style="padding: 10px 0">トップ</a>
+<a class="ft-link" href="service.html" style="padding: 10px 0">サービス</a>
+<a class="ft-link" href="price.html" style="padding: 10px 0">料金プラン</a>
+<a class="ft-link" href="works.html" style="padding: 10px 0">制作実績</a>
+<a class="ft-link" href="about.html" style="padding: 10px 0">私たちについて</a>
+<a class="ft-link" href="column.html" style="padding: 10px 0">コラム</a>
+<a class="ft-link" href="contact.html" style="padding: 10px 0">お問い合わせ</a>
+<a class="ft-link" href="tokushoho.html" style="padding: 10px 0">特定商取引法に基づく表記</a>
+<a class="ft-link" href="privacy.html" style="padding: 10px 0">プライバシーポリシー</a>
+</nav>
+</div>
+<div style="border-top: 1px solid #F2C08C">
+<p class="en wrap" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px 88px; font-size: 11px; color: #303330; letter-spacing: 0.1em">© 2026 OneStory Inc.</p>
+</div>
 </footer>
-<script src="assets/main.js"></script>
+
+<!-- スマホ固定CTA（768px以下。実装時はFV通過後に表示） -->
+<div class="sp-cta" style="position: sticky; bottom: 0; z-index: 30; padding: 12px 16px; background: #ffffff; border-top: 1px solid #F8D9B8">
+<a class="os-btn os-btn--primary" href="contact.html" style="display: flex; align-items: center; justify-content: space-between; height: 52px; padding: 0 20px; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+
+</div>
+<script src="assets/site.js"></script>
 </body>
 </html>

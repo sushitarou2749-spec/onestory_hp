@@ -1,169 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>お問い合わせ｜株式会社ワン・ストーリー</title>
-<meta name="description" content="まずは、今感じている「困った」を聞かせてください。何をお願いすればいいのか分からない段階でも大丈夫です。">
-<meta property="og:title" content="お問い合わせ｜株式会社ワン・ストーリー">
-<meta property="og:description" content="まずは、今感じている「困った」を聞かせてください。何をお願いすればいいのか分からない段階でも大丈夫です。">
-<meta property="og:type" content="website">
-<link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<title>お問い合わせ・無料相談｜ワン・ストーリー</title>
+<meta name="description" content="ホームページ制作・LP制作・SEOのご相談はこちら。何も決まっていない段階でも大丈夫です。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&amp;family=Pinyon+Script&amp;family=Cormorant+Garamond:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff;color:#1a1a1a;font-family:"Noto Serif JP","Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-size:14.5px;line-height:2;letter-spacing:.05em}
+a{color:#C25500}a:hover{color:#C25500}
+.en{font-family:"Cormorant Garamond","Noto Serif JP",serif}
+.arrow{transition:transform .25s ease-out}
+.os-btn{transition:background-color .25s ease-out,color .25s ease-out}
+.os-btn--primary:hover{background:#9E4500 !important}
+.os-btn--white:hover{background:#ffffff !important}
+.os-btn:hover .arrow{transform:translateX(4px)}
+.nav-link{color:#1a1a1a;text-decoration:none;background-image:linear-gradient(#ef7a00,#ef7a00);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .3s ease-out}
+.nav-link:hover,.nav-link[aria-current="page"]{color:#1a1a1a;background-size:100% 1px}
+.ft-link:hover{color:#C25500 !important}
+.fld{height:52px;box-sizing:border-box;width:100%;border-radius:0;padding:0 14px;font:inherit;font-size:16px;color:#1a1a1a;background:#ffffff}
+.fld::placeholder{color:#737573}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #1a1a1a;outline-offset:2px}
+.on-dark a:focus-visible{outline-color:#f8bc63}
+.menu-btn{display:none !important}
+@media (max-width:960px){.nav-pc{display:none !important}.menu-btn{display:inline-flex !important}}
+@media (min-width:769px){.sp-cta{display:none !important}}
+@media (max-width:768px){.sec{padding-top:40px !important;padding-bottom:56px !important}.wrap{padding-left:16px !important;padding-right:16px !important}.ph-h1{font-size:24px !important}}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/site.css">
+<!-- Googleアナリティクス（GA4）：測定IDを取得したら、ここに計測タグを貼る -->
 </head>
 <body>
-<header class="site-header">
-  <div class="header-top">
-    <a class="logo" href="index.html">
-      <img src="assets/logo.png" alt="One Story">
-      <span class="name">株式会社ワン・ストーリー</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="gnav" id="gnav">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">私たちについて</a></li>
-      <li><a href="business.html">企業・組織を整える</a></li>
-      <li><a href="program.html">プログラム</a></li>
-      <li><a href="human.html">人を整える</a></li>
-      <li><a href="wisdom.html">日本の智慧</a></li>
-      <li><a href="future.html">次世代へ</a></li>
-      <li><a href="column.html">コラム</a></li>
-      <li><a href="contact.html" class="current">お問い合わせ</a></li>
-    </ul>
-  </nav>
+<div style="background: #ffffff">
+<header style="position: sticky; top: 0; z-index: 20; background: #ffffff; border-bottom: 1px solid #F8D9B8; font-family: 'Noto Serif JP', 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif; color: #1a1a1a">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="index.html" style="display: flex; align-items: center; text-decoration: none">
+<img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー トップへ" style="height: 36px; width: auto; display: block">
+</a>
+<nav class="nav-pc" aria-label="グローバルナビゲーション" style="display: flex; align-items: center; gap: 32px; font-size: 13px; font-weight: 500">
+<a class="nav-link" href="service.html" aria-current="false" style="padding: 6px 0">サービス</a>
+<a class="nav-link" href="price.html" aria-current="false" style="padding: 6px 0">料金</a>
+<a class="nav-link" href="works.html" aria-current="false" style="padding: 6px 0">制作実績</a>
+<a class="nav-link" href="about.html" aria-current="false" style="padding: 6px 0">私たちについて</a>
+<a class="nav-link" href="column.html" aria-current="false" style="padding: 6px 0">コラム</a>
+<a class="os-btn os-btn--primary" href="contact.html" style="display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 22px; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 13px">無料相談<svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</nav>
+<button class="menu-btn" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false" data-menu-open style="width: 44px; height: 44px; border: 1px solid #1a1a1a; background: #ffffff; align-items: center; justify-content: center; color: #1a1a1a; cursor: pointer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+</button>
+</div>
 </header>
-<div class="page-head">
-  <img class="botanical" src="assets/botanical.svg" alt="">
-  <div class="wrap">
-    <div class="inner">
-      <span class="script">Contact</span>
-      <h1>お問い合わせ</h1>
-      <p class="tagline">まずは、今感じている「困った」を聞かせてください。</p>
-    </div>
-  </div>
+<div id="sp-menu" class="sp-menu" hidden>
+<div class="sp-menu__bar"><img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー" style="height: 32px; width: auto"><button type="button" class="sp-menu__close" data-menu-close aria-label="メニューを閉じる"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+<nav aria-label="メニュー" class="sp-menu__nav">
+<a href="index.html"><span class="en">TOP</span>トップ</a>
+<a href="service.html"><span class="en">SERVICES</span>サービス</a>
+<a href="price.html"><span class="en">PRICE</span>料金プラン</a>
+<a href="works.html"><span class="en">WORKS</span>制作実績</a>
+<a href="about.html"><span class="en">ABOUT</span>私たちについて</a>
+<a href="column.html"><span class="en">COLUMN</span>コラム</a>
+</nav>
+<a class="sp-menu__cta" href="contact.html">無料で相談する<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 </div>
 
-<section>
-  <div class="wrap-mid center">
-    <p class="lead-copy narrow">「何をお願いすればいいのか分からない」<br>
-    「システムが必要なのかも分からない」<br>
-    そんな状態でも大丈夫です。お話を伺いながら、一緒に整理していきます。</p>
-    <hr class="rule">
-    <p class="lead-copy narrow quiet">ご相談内容の目安</p>
-    <ul class="plain-list" style="max-width:32em;margin-inline:auto;">
-      <li>会社について相談する</li>
-      <li>講座・合宿について相談する</li>
-      <li>個人セッションについて相談する</li>
-    </ul>
-  </div>
+<section class="ph" style="background: #EF7A00; border-bottom: 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 56px 32px">
+<nav aria-label="パンくずリスト"><ol style="list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; font-size: 11px; color: #303330"><li><a href="index.html" style="color: #303330">トップ</a></li><li aria-hidden="true">/</li><li aria-current="page">お問い合わせ</li></ol></nav>
+<p class="script" aria-hidden="true" style="margin: 40px 0 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #ffffff">Contact</p>
+<h1 class="ph-h1" style="margin: 12px 0 0; font-size: 32px; line-height: 1.5; font-weight: 600; letter-spacing: 0.1em">お問い合わせ・無料相談</h1>
+<p style="margin: 16px 0 0; max-width: 40em; color: #303330">まだ何も決まっていなくても大丈夫です。お気軽にご相談ください。</p>
+</div>
 </section>
 
-<section class="bg-gray">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>お問合せフォーム</h2>
-      <p class="ja-sub">ご相談、各種お申込み、講演・セミナー等のご依頼などお気軽にお問合せください。</p>
-    </div>
-    <div class="contact-cols">
-      <!-- ===== フォーム ===== -->
-      <form class="contact-form" id="contactForm" novalidate>
-        <div class="field">
-          <label for="f-name">お名前<span class="req">*</span></label>
-          <input type="text" id="f-name" name="お名前" placeholder="お名前" required>
-          <span class="err">お名前をご入力ください</span>
-        </div>
-        <div class="field">
-          <label for="f-company">会社名・団体名</label>
-          <input type="text" id="f-company" name="会社名" placeholder="会社名・団体名（任意）">
-        </div>
-        <div class="field">
-          <label for="f-email">Email<span class="req">*</span></label>
-          <input type="email" id="f-email" name="メールアドレス" placeholder="Email" required>
-          <span class="err">メールアドレスをご確認ください</span>
-        </div>
-        <div class="field">
-          <label for="f-tel">お電話番号(任意)</label>
-          <input type="tel" id="f-tel" name="電話番号" placeholder="お電話番号(任意)">
-        </div>
-        <div class="field">
-          <label for="f-type">お問合せ内容<span class="req">*</span></label>
-          <select id="f-type" name="お問合せ内容" required>
-            <option value="">お問合せ内容</option>
-            <option>会社について相談する</option>
-            <option>講座・合宿について相談する</option>
-            <option>個人セッションについて相談する</option>
-            <option>取材・講演のご依頼</option>
-            <option>その他</option>
-          </select>
-          <span class="err">お問合せ内容をお選びください</span>
-        </div>
-        <div class="field">
-          <label for="f-msg">メッセージ<span class="req">*</span></label>
-          <textarea id="f-msg" name="メッセージ" placeholder="メッセージ" required></textarea>
-          <span class="err">メッセージをご入力ください</span>
-        </div>
+<section class="sec" style="padding: 72px 0 96px">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: row-reverse; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start">
 
-        <!-- 迷惑メール対策（人には見えません。触らないでください） -->
-        <div class="hp-field" aria-hidden="true">
-          <label for="f-hp">この欄は入力しないでください</label>
-          <input type="text" id="f-hp" name="_gotcha" tabindex="-1" autocomplete="off">
-        </div>
+<!-- 横（スマホでは上）：流れ -->
+<aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="border: 1px solid #F2C08C; padding: 28px 24px; background: #ffffff">
+<p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #303330">AFTER CONTACT</p>
+<h2 style="margin: 4px 0 0; font-size: 16px; font-weight: 600">お問い合わせ後の流れ</h2>
+<ol style="margin: 20px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: flex; gap: 16px; padding: 14px 0; border-top: 1px solid #F2C08C"><span class="en" style="font-size: 18px; font-weight: 500; color: #ef7a00; line-height: 1.4">01</span><div><p style="margin: 0; font-weight: 600">担当者からご連絡</p><p style="margin: 2px 0 0; font-size: 13px; color: #303330">メールまたはお電話でご連絡します。</p></div></li>
+<li style="display: flex; gap: 16px; padding: 14px 0; border-top: 1px solid #F2C08C"><span class="en" style="font-size: 18px; font-weight: 500; color: #ef7a00; line-height: 1.4">02</span><div><p style="margin: 0; font-weight: 600">無料ヒアリング</p><p style="margin: 2px 0 0; font-size: 13px; color: #303330">オンラインまたは対面で、お話を伺います。</p></div></li>
+<li style="display: flex; gap: 16px; padding: 14px 0; border-top: 1px solid #F2C08C; border-bottom: 1px solid #F2C08C"><span class="en" style="font-size: 18px; font-weight: 500; color: #ef7a00; line-height: 1.4">03</span><div><p style="margin: 0; font-weight: 600">ご提案・お見積り</p><p style="margin: 2px 0 0; font-size: 13px; color: #303330">内容と費用をご提示します。ご依頼はそのあとで決めていただけます。</p></div></li>
+</ol>
+</div>
+<div style="font-size: 13px; color: #303330; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0">お返事に数日いただく場合がございます。3日以上返信がない場合は、恐れ入りますが再度ご連絡ください。</p>
+</div>
+</aside>
 
-        <button type="submit" class="form-submit" id="formSubmit">送信する</button>
-        <p class="form-msg" id="formMsg"></p>
-        <p class="form-privacy">いただいた個人情報は、お問い合わせへのご返信以外の目的では使用いたしません。</p>
-      </form>
+<!-- フォーム -->
+<div style="flex: 1 1 560px; min-width: 0">
+<div id="form-sent" role="status" hidden style="border: 1px solid #F2C08C; background: #ffffff; padding: 48px 32px; text-align: center">
+<p class="en" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; font-weight: 500; color: #303330">THANK YOU</p>
+<h2 style="margin: 8px 0 0; font-size: 20px; font-weight: 600">送信しました。ありがとうございます。</h2>
+<p style="margin: 12px 0 0; color: #303330">内容を確認のうえ、担当者からご連絡します。</p>
+<button type="button" id="form-reset" style="margin-top: 24px; min-height: 44px; padding: 0 20px; border: 1px solid #1a1a1a; background: #ffffff; font: inherit; font-size: 13px; cursor: pointer">別の内容も送る</button>
+</div>
 
-      <!-- ===== 右側（写真・リンク） ===== -->
-      <div class="contact-side">
-        <img src="images/rika.jpg" alt="代表 平澤利佳">
-        <p class="side-links"><a href="#" target="_blank" rel="noopener">Facebook</a></p>
-        <p class="side-note">お返事には数日いただく場合がございます。<br>
-        3日以上返信がない場合は、恐れ入りますが再度ご連絡ください。</p>
-      </div>
-    </div>
-  </div>
+
+<form id="contact-form" novalidate style="display: flex; flex-direction: column; gap: 28px">
+<div id="form-alert" role="alert" hidden style="border: 2px solid #b3261e; padding: 14px 18px; font-size: 13px; color: #b3261e; font-weight: 600">入力内容をご確認ください。赤枠の項目が未入力または正しくありません。</div>
+
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-name" style="font-weight: 600; font-size: 14px">お名前<span style="font-size: 10px; color: #ffffff; background: #C25500; padding: 1px 6px; margin-left: 8px; vertical-align: 2px">必須</span></label>
+<input id="f-name" name="name" class="fld" type="text" autocomplete="name" placeholder="例）山田 花子" aria-invalid="false" aria-describedby="e-name" style="border: 1px solid #1a1a1a">
+<span id="e-name" hidden style="font-size: 12px; color: #b3261e; font-weight: 600">お名前を入力してください</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-company" style="font-weight: 600; font-size: 14px">会社名・屋号<span style="font-size: 11px; font-weight: 400; color: #303330; margin-left: 8px">任意</span></label>
+<input id="f-company" name="company" class="fld" type="text" autocomplete="organization" placeholder="例）〇〇サロン" style="border: 1px solid #1a1a1a">
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-email" style="font-weight: 600; font-size: 14px">メールアドレス<span style="font-size: 10px; color: #ffffff; background: #C25500; padding: 1px 6px; margin-left: 8px; vertical-align: 2px">必須</span></label>
+<input id="f-email" name="email" class="fld" type="email" autocomplete="email" placeholder="例）info@example.com" aria-invalid="false" aria-describedby="e-email" style="border: 1px solid #1a1a1a">
+<span id="e-email" hidden style="font-size: 12px; color: #b3261e; font-weight: 600">メールアドレスを入力してください</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-tel" style="font-weight: 600; font-size: 14px">電話番号<span style="font-size: 11px; font-weight: 400; color: #303330; margin-left: 8px">任意</span></label>
+<input id="f-tel" name="tel" class="fld" type="tel" autocomplete="tel" placeholder="例）090-1234-5678" style="border: 1px solid #1a1a1a">
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-type" style="font-weight: 600; font-size: 14px">ご相談内容<span style="font-size: 10px; color: #ffffff; background: #C25500; padding: 1px 6px; margin-left: 8px; vertical-align: 2px">必須</span></label>
+<select id="f-type" name="type" class="fld" aria-invalid="false" aria-describedby="e-type" style="border: 1px solid #1a1a1a">
+<option value="">選択してください</option>
+<option value="new">ホームページ新規制作</option>
+<option value="renewal">リニューアル</option>
+<option value="lp">LP制作</option>
+<option value="seo">SEO・集客の改善</option>
+<option value="system">システム・ツール開発</option>
+<option value="other">その他・まだ決まっていない</option>
+</select>
+<span id="e-type" hidden style="font-size: 12px; color: #b3261e; font-weight: 600">ご相談内容を選んでください</span>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-budget" style="font-weight: 600; font-size: 14px">ご予算<span style="font-size: 11px; font-weight: 400; color: #303330; margin-left: 8px">任意</span></label>
+<select id="f-budget" name="budget" class="fld" style="border: 1px solid #1a1a1a">
+<option>未定・相談したい</option><option>〜【要確認】万円</option><option>【要確認】〜【要確認】万円</option><option>【要確認】万円以上</option>
+</select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-when" style="font-weight: 600; font-size: 14px">ご希望の時期<span style="font-size: 11px; font-weight: 400; color: #303330; margin-left: 8px">任意</span></label>
+<input id="f-when" name="when" class="fld" type="text" placeholder="例）来年の春ごろ" style="border: 1px solid #1a1a1a">
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-msg" style="font-weight: 600; font-size: 14px">お問い合わせ内容<span style="font-size: 10px; color: #ffffff; background: #C25500; padding: 1px 6px; margin-left: 8px; vertical-align: 2px">必須</span></label>
+<textarea id="f-msg" name="message" rows="6" placeholder="今のお悩みや、気になっていることを自由にお書きください。" aria-invalid="false" aria-describedby="e-msg" style="border: 1px solid #1a1a1a; border-radius: 0; padding: 14px; font: inherit; font-size: 16px; color: #1a1a1a; background: #ffffff; resize: vertical"></textarea>
+<span id="e-msg" hidden style="font-size: 12px; color: #b3261e; font-weight: 600">お問い合わせ内容を入力してください</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px; border-top: 1px solid #F8D9B8">
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 14px; cursor: pointer">
+<input id="f-agree" name="agree" type="checkbox" aria-invalid="false" aria-describedby="e-agree" style="width: 22px; height: 22px; accent-color: #C25500; flex: none">
+<span><a href="privacy.html">プライバシーポリシー</a>に同意する<span style="font-size: 10px; color: #ffffff; background: #C25500; padding: 1px 6px; margin-left: 8px; vertical-align: 2px">必須</span></span>
+</label>
+<span id="e-agree" hidden style="font-size: 12px; color: #b3261e; font-weight: 600">プライバシーポリシーへの同意が必要です</span>
+</div>
+
+<div aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden"><label for="f-hp">この欄は入力しないでください</label><input id="f-hp" type="text" tabindex="-1" autocomplete="off"></div>
+<button class="os-btn os-btn--primary" type="submit" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: space-between; gap: 32px; height: 60px; min-width: 280px; padding: 0 28px; border: 0; background: #C25500; color: #ffffff; font: inherit; font-weight: 600; font-size: 15px; cursor: pointer">内容を送信する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+<p style="margin: 0; font-size: 11px; color: #303330">いただいた個人情報は、お問い合わせへのご返信以外の目的では使用いたしません。</p>
+</form>
+
+</div>
+
+</div>
 </section>
 
-<section>
-  <div class="wrap-mid center">
-    <span class="script">Company</span>
-    <hr class="rule">
-    <table class="spec">
-      <tr><th>会社名</th><td>株式会社ワン・ストーリー</td></tr>
-      <tr><th>代表取締役</th><td>平澤 利佳</td></tr>
-      <tr><th>所在地</th><td>〒472-0001　愛知県知立市八橋町山田谷2-15</td></tr>
-      <tr><th>メール</th><td>onestory310@gmail.com</td></tr>
-      <tr><th>事業内容</th><td>業務改善コンサルティング／システム開発／IT・AI活用支援／組織づくり支援／各種講座・セッション</td></tr>
-    </table>
-  </div>
+<div style="font-family: 'Noto Serif JP', 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif; color: #1a1a1a; font-size: 14.5px; line-height: 2; letter-spacing: 0.05em">
+
+<!-- CTA帯 -->
+<section style="background: #EF7A00; color: #1a1a1a; padding: 96px 0">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
+<div style="flex: 1 1 480px; min-width: 0">
+<p class="script" aria-hidden="true" style="margin: 0; font-family: 'Pinyon Script', 'Great Vibes', cursive; font-size: 44px; line-height: 1.15; font-weight: 400; letter-spacing: 0; color: #ffffff">Contact</p>
+<h2 style="margin: 12px 0 0; font-size: 28px; line-height: 1.6; font-weight: 600; letter-spacing: 0.1em">相談だけでも、大歓迎です。</h2>
+<p style="margin: 16px 0 0; font-size: 14px; max-width: 34em">「何をお願いすればいいか分からない」段階でも大丈夫です。お話を伺いながら、一緒に整理していきます。</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; flex: 0 1 320px">
+<a class="os-btn os-btn--white" href="contact.html" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 64px; padding: 0 24px; background: #ffffff; color: #1a1a1a; text-decoration: none; font-weight: 600; font-size: 15px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
 </section>
 
-<script src="assets/contact.js"></script>
-<footer class="site-footer">
-  <div class="wrap">
-    <ul class="footer-nav">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">私たちについて</a></li>
-      <li><a href="business.html">企業・組織を整える</a></li>
-      <li><a href="program.html">プログラム</a></li>
-      <li><a href="human.html">人を整える</a></li>
-      <li><a href="wisdom.html">日本の智慧</a></li>
-      <li><a href="future.html">次世代へ</a></li>
-      <li><a href="column.html">コラム</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-      <li><a href="docs/onestory-service.pdf" target="_blank" rel="noopener">サービス資料（PDF）</a></li>
-    </ul>
-    <p class="copyright">&copy; 2026 株式会社ワン・ストーリー &nbsp;/&nbsp; <a href="tokushoho.html">特定商取引法に基づく表記</a></p>
-  </div>
+<!-- フッター -->
+<footer style="background: #ffffff; border-top: 3px solid #EF7A00">
+<div class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 40px; display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px">
+<img src="assets/logo-header.png" alt="OneStory 株式会社ワン・ストーリー" style="height: 40px; width: auto; align-self: flex-start; display: block">
+<p style="margin: 0; font-size: 13px">株式会社ワン・ストーリー</p>
+<p style="margin: 8px 0 0; font-size: 13px; color: #303330">〒472-0001 愛知県知立市八橋町山田谷2-15</p>
+<p style="margin: 0; font-size: 13px; color: #303330">onestory310@gmail.com</p>
+<a class="ft-link" href="#" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 13px; color: #303330; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3h2v9h3v-9h2.5l.5-3h-3V6.8c0-.5.3-.8.8-.8H15z"></path></svg>Facebook</a>
+<p style="display: none"></p>
+</div>
+<nav aria-label="フッターナビゲーション" style="flex: 1 1 520px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0 32px; font-size: 13px; align-content: start">
+<a class="ft-link" href="index.html" style="padding: 10px 0; color: #303330; text-decoration: none">トップ</a>
+<a class="ft-link" href="service.html" style="padding: 10px 0; color: #303330; text-decoration: none">サービス</a>
+<a class="ft-link" href="price.html" style="padding: 10px 0; color: #303330; text-decoration: none">料金プラン</a>
+<a class="ft-link" href="works.html" style="padding: 10px 0; color: #303330; text-decoration: none">制作実績</a>
+<a class="ft-link" href="about.html" style="padding: 10px 0; color: #303330; text-decoration: none">私たちについて</a>
+<a class="ft-link" href="column.html" style="padding: 10px 0; color: #303330; text-decoration: none">コラム</a>
+<a class="ft-link" href="contact.html" style="padding: 10px 0; color: #303330; text-decoration: none">お問い合わせ</a>
+<a class="ft-link" href="tokushoho.html" style="padding: 10px 0; color: #303330; text-decoration: none">特定商取引法に基づく表記</a>
+<a class="ft-link" href="privacy.html" style="padding: 10px 0; color: #303330; text-decoration: none">プライバシーポリシー</a>
+</nav>
+</div>
+<div style="border-top: 1px solid #F2C08C">
+<p class="wrap" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px 88px; font-family: 'Cormorant Garamond', serif; font-size: 11px; color: #303330; letter-spacing: 0.1em">© 2026 OneStory Inc.</p>
+</div>
 </footer>
-<script src="assets/main.js"></script>
+
+<!-- スマホ固定CTA -->
+<div class="sp-cta" style="position: sticky; bottom: 0; z-index: 30; padding: 12px 16px; background: #ffffff; border-top: 1px solid #F8D9B8">
+<a class="os-btn os-btn--primary" href="contact.html" style="display: flex; align-items: center; justify-content: space-between; height: 52px; padding: 0 20px; background: #C25500; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px">無料で相談する<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+
+</div>
+</div>
+<script src="assets/site.js"></script>
 </body>
 </html>
