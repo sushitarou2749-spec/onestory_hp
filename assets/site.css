@@ -1,0 +1,103 @@
+/* ワン・ストーリー 共通スタイル（各ページの <style> に入らない共通部分） */
+[hidden]{display:none !important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+header[style*="sticky"]{top:env(safe-area-inset-top,0px) !important}
+
+/* 全画面メニュー */
+.sp-menu{position:fixed;inset:0;z-index:100;background:#ffffff;display:flex;flex-direction:column;padding:env(safe-area-inset-top,0px) max(16px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));overflow-y:auto}
+.sp-menu__bar{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #F2C08C}
+.sp-menu__close{width:44px;height:44px;border:1px solid #1a1a1a;background:#ffffff;color:#1a1a1a;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.sp-menu__nav{display:flex;flex-direction:column;margin-top:16px}
+.sp-menu__nav a{display:flex;flex-direction:column;gap:2px;padding:16px 4px;border-bottom:1px solid #F2C08C;color:#1a1a1a;text-decoration:none;font-size:18px;font-weight:500;letter-spacing:.1em}
+.sp-menu__nav a .en{font-family:"Pinyon Script",cursive;font-size:22px;letter-spacing:0;font-weight:400;color:#E06A00;text-transform:capitalize}
+.sp-menu__cta{margin-top:32px;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 24px;background:#C25500;color:#ffffff !important;text-decoration:none;font-weight:700}
+body.menu-open{overflow:hidden}
+
+/* 絞り込みボタンの選択状態 */
+.chip{border:1px solid #F2C08C !important;background:#ffffff !important;color:#1a1a1a !important}
+.chip[aria-pressed="true"]{border-color:#1a1a1a !important;background:#1a1a1a !important;color:#ffffff !important}
+.tabbtn[aria-pressed="true"]{border-bottom-color:#1a1a1a !important;font-weight:600 !important}
+
+/* スマホ固定CTA：ファーストビューを過ぎてから出す */
+.sp-cta{transition:transform .3s ease-out}
+.sp-cta.is-away{transform:translateY(110%)}
+.sp-cta{padding-bottom:calc(12px + env(safe-area-inset-bottom,0px)) !important}
+
+.faq-icon{transition:transform .25s ease-out}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sp-cta,.faq-icon{transition:none}}
+
+/* ===== モーション（saisia.co.jp を参考） ===== */
+:root{--ease-expo:cubic-bezier(.19,1,.22,1);--ease-out:cubic-bezier(.22,1,.36,1)}
+@keyframes os-pageIn{from{opacity:0}to{opacity:1}}
+@keyframes os-slideDown{from{transform:translateY(-100%)}to{transform:translateY(0)}}
+@keyframes os-drift1{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(60px,30px) scale(1.08)}50%{transform:translate(100px,80px) scale(.95)}75%{transform:translate(-20px,60px) scale(1.05)}}
+@keyframes os-drift2{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(-70px,40px) scale(1.06)}66%{transform:translate(30px,-50px) scale(.94)}}
+@keyframes os-drift3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(50px,-60px) scale(1.1)}}
+@keyframes os-kenburns{from{transform:scale(1)}to{transform:scale(1.08)}}
+@keyframes os-scrollPulse{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes os-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.js body{animation:os-pageIn .5s ease-out both}
+.js header[style*="sticky"]{animation:os-slideDown .6s var(--ease-expo) both}
+header[style*="sticky"] > .wrap{transition:height .4s var(--ease-expo)}
+header[style*="sticky"] img{transition:height .4s var(--ease-expo)}
+header.is-scrolled > .wrap{height:60px !important}
+header.is-scrolled img{height:30px !important}
+
+/* ヒーロー：行ごとのマスク＋ぼかし解除 */
+.os-line{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.os-line__in{display:block;transform:translateY(105%);opacity:0;filter:blur(8px);transition:transform 1.1s var(--ease-expo),opacity .8s ease-out,filter 1s ease-out}
+.is-ready .os-line__in{transform:none;opacity:1;filter:none}
+.os-fade{opacity:0;transform:translateY(12px);transition:opacity .9s ease-out,transform .9s var(--ease-expo)}
+.is-ready .os-fade{opacity:1;transform:none}
+
+/* ヒーロー：漂うシェイプ・写真のゆっくりズーム・スクロール線 */
+.os-blobs{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.os-blob{display:none}
+.os-blob--1{width:420px;height:420px;left:-120px;top:-80px;background:#F3E2CC;animation:os-drift1 16s ease-in-out infinite}
+.os-blob--2{width:320px;height:320px;left:30%;bottom:-140px;background:#f8bc63;opacity:.22;animation:os-drift2 20s ease-in-out infinite}
+.os-blob--3{width:260px;height:260px;left:42%;top:12%;background:#EEE7DE;animation:os-drift3 18s ease-in-out infinite}
+#top > .wrap{z-index:1}
+#top .hero-photo{overflow:hidden;z-index:1}
+#top .hero-photo::before{content:"";position:absolute;inset:0;background:inherit;animation:os-kenburns 18s ease-in-out infinite alternate;z-index:0}
+#top .hero-photo > *{position:relative;z-index:1}
+#top > div[aria-hidden="true"] span[style*="height: 56px"]{animation:os-scrollPulse 2s ease-in-out infinite}
+
+/* 流れる帯 */
+.os-marquee{overflow:hidden;background:#EF7A00;padding-block:16px}
+.os-marquee__track{display:flex;width:max-content;animation:os-marquee 40s linear infinite}
+.os-marquee__item{display:flex;align-items:center;gap:40px;padding-right:40px;font-family:"Pinyon Script","Noto Serif JP",cursive;font-size:clamp(26px,3.6vw,40px);font-weight:400;letter-spacing:0;color:#1a1a1a;white-space:nowrap}
+.os-marquee__item i{width:6px;height:6px;border-radius:50%;background:#ffffff;display:inline-block}
+.os-marquee__item span:nth-child(4n+3){color:#ffffff}
+.os-marquee:hover .os-marquee__track{animation-play-state:paused}
+
+/* スクロールでフェードアップ */
+.os-reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease-out,transform 1s var(--ease-expo);transition-delay:var(--d,0s)}
+.os-reveal.is-in{opacity:1;transform:none}
+
+/* ホバー */
+.os-btn{transition:background-color .3s ease,color .3s ease,gap .35s var(--ease-expo) !important}
+.os-btn:hover{gap:40px !important}
+.os-btn .arrow,.os-more .arrow{transition:transform .35s var(--ease-expo) !important}
+.card-link [role="img"]{transition:transform .8s var(--ease-expo)}
+.card-link{overflow:hidden}
+.card-link:hover [role="img"]{transform:scale(1.04)}
+
+/* メニュー：円形ではなく上から開く clip-path ＋ 項目を順に */
+.sp-menu{clip-path:inset(0 0 100% 0);transition:clip-path .6s cubic-bezier(.4,0,.2,1)}
+.sp-menu.is-open{clip-path:inset(0 0 0 0)}
+.sp-menu__nav a,.sp-menu__cta{opacity:0;transform:translateY(20px);transition:opacity .35s ease,transform .5s var(--ease-expo)}
+.sp-menu.is-open .sp-menu__nav a,.sp-menu.is-open .sp-menu__cta{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .js body,.js header[style*="sticky"],.os-blob,#top .hero-photo::before,.os-marquee__track,#top > div[aria-hidden="true"] span{animation:none !important}
+  .os-line__in,.os-fade,.os-reveal,.sp-menu,.sp-menu__nav a,.sp-menu__cta{transition:none !important;opacity:1 !important;transform:none !important;filter:none !important}
+  .sp-menu{clip-path:none}
+}
+
+/* 明朝体：日本語の見出しは字間を広めに */
+h1,h2,h3{font-feature-settings:"palt" 0}
+.script{font-feature-settings:normal}
+.ph a{color:#1a1a1a}
+.ph a:focus-visible{outline-color:#1a1a1a}
